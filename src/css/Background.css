@@ -1,0 +1,23 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #330808;
+    box-shadow: inset 0 0 300px black;
+}
+
+.bookshelf {
+    display: flex;
+    width: 30%;
+    height: 100%;
+}
+
+.shelf {
+    width: 50%;
+    height: 25%;
+    background-color: #2F0E09;
+    border: 20px solid #723F3C;
+    box-shadow: inset 0 0 20px black;
+}

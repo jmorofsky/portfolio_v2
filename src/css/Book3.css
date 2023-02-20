@@ -1,0 +1,40 @@
+.container_b3 {
+    position: relative;
+    display: inline-block;
+    top: 64px;
+    left: 11px;
+    height: 68%;
+    width: 70px;
+    background: rgb(107, 41, 29);
+    background: linear-gradient(90deg, rgba(107, 41, 29, 1) 10%, rgba(129, 50, 37, 1) 25%,
+            rgba(155, 82, 75, 1) 60%, rgba(139, 51, 49, 1) 80%, rgba(101, 38, 20, 1) 90%);
+
+    transform: rotate(90deg);
+}
+
+.mediumStripe_b3 {
+    background: rgb(180, 99, 52);
+    background: linear-gradient(90deg, rgba(180, 99, 52, 1) 10%, rgba(237, 134, 67, 1) 25%,
+            rgba(241, 151, 89, 1) 60%, rgba(244, 131, 63, 1) 80%, rgba(179, 99, 46, 1) 90%);
+    width: 100%;
+    height: 10px;
+    position: relative;
+}
+
+.smallStripe_b3 {
+    background: rgb(180, 99, 52);
+    background: linear-gradient(90deg, rgba(180, 99, 52, 1) 10%, rgba(237, 134, 67, 1) 25%,
+            rgba(241, 151, 89, 1) 60%, rgba(244, 131, 63, 1) 80%, rgba(179, 99, 46, 1) 90%);
+    width: 100%;
+    height: 5px;
+    position: relative;
+}
+
+.bigStripe_b3 {
+    background: rgb(93, 8, 13);
+    background: linear-gradient(90deg, rgba(93, 8, 13, 1) 10%, rgba(122, 9, 13, 1) 25%,
+            rgba(145, 41, 52, 1) 60%, rgba(127, 6, 11, 1) 80%, rgba(89, 9, 10, 1) 90%);
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
