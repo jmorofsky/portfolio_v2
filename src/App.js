@@ -1,12 +1,23 @@
 import React from 'react'
 import './css/App.css'
-import Background from './components/Background'
+import Loadscreen from './components/Loadscreen'
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { loading: true }
+  }
+
   render() {
-    return (
-      <Background />
-    )
+    if (this.state.loading === true) {
+      return (
+        <Loadscreen />
+      )
+    } else {
+      return (
+        <div></div>
+      )
+    }
   }
 }
 

@@ -1,0 +1,94 @@
+.loadGif {
+    display: block;
+    height: 75%;
+    width: 75%;
+    max-width: 1000px;
+    margin: 10vh auto 0;
+}
+
+.loadOutline {
+    position: relative;
+    z-index: 1;
+    width: 350px;
+    height: 7px;
+    margin: auto;
+    margin-top: -60px;
+    outline: 2px solid grey;
+    outline-offset: 3px;
+}
+
+.loadBar {
+    background-color: rgb(230, 230, 230);
+    width: 0;
+    height: 100%;
+    animation: load 9s ease-in-out forwards;
+}
+
+.loadText {
+    color: rgb(243, 205, 79);
+    width: 350px;
+    margin: 10px auto 0;
+    font-size: 20px;
+    font-family: Inconsolata;
+}
+
+.loadText:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    animation: ellipsis steps(4, end) 1500ms infinite;
+    content: "\2026";
+    width: 0px;
+}
+
+.loadTextStatic {
+    color: rgb(243, 205, 79);
+    width: 350px;
+    margin: 10px auto 0;
+    font-size: 20px;
+    font-family: Inconsolata;
+}
+
+@keyframes ellipsis {
+    to {
+        width: 13px;
+    }
+}
+
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+
+    20% {
+        width: 20%;
+    }
+
+    25% {
+        width: 20%;
+    }
+
+    40% {
+        width: 40%;
+    }
+
+    50% {
+        width: 43%;
+    }
+
+    70% {
+        width: 60%;
+    }
+
+    75% {
+        width: 60%;
+    }
+
+    80% {
+        width: 75%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
