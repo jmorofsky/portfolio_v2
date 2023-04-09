@@ -9,7 +9,7 @@
 .loadOutline {
     max-width: 350px;
     width: 40vw;
-    min-width: 200px;
+    min-width: 210px;
     height: 7px;
     margin: 15px auto 0;
     outline: 1px solid grey;
@@ -26,7 +26,7 @@
 .loadText {
     max-width: 350px;
     width: 40vw;
-    min-width: 200px;
+    min-width: 210px;
     color: rgb(243, 205, 79);
     margin: 10px auto 0;
     font-size: 20px;
@@ -55,7 +55,7 @@
 .loadOutlineStatic {
     max-width: 350px;
     width: 40vw;
-    min-width: 200px;
+    min-width: 210px;
     height: 7px;
     margin: 15px auto 0;
     outline: 1px solid grey;
@@ -66,7 +66,7 @@
 .loadTextStatic {
     max-width: 350px;
     width: 40vw;
-    min-width: 200px;
+    min-width: 210px;
     color: rgb(243, 205, 79);
     margin: 10px auto 0;
     font-size: 20px;

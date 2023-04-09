@@ -27,7 +27,15 @@
     margin: auto;
 }
 
+@media screen and (max-width: 800px) {
+    .outline {
+        width: calc(85vw + 20px);
+        height: calc(101.5vh - 15vw);
+    }
+}
+
 @keyframes grain {
+
     0%,
     100% {
         transform: translate(0, 0)
