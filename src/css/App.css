@@ -1,0 +1,71 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+}
+
+.background::after {
+    content: "";
+    background-image: url("../images/filmgrain.png");
+    height: 300%;
+    width: 300%;
+    opacity: 0.02;
+    position: fixed;
+    animation: grain 8s steps(10) infinite;
+    left: -50%;
+    top: -100%;
+}
+
+.outline {
+    width: calc(100vw - 100px);
+    height: calc(100vh - 100px);
+    border: 1px solid grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes grain {
+    0%,
+    100% {
+        transform: translate(0, 0)
+    }
+
+    10% {
+        transform: translate(-5%, -10%)
+    }
+
+    20% {
+        transform: translate(-15%, 5%)
+    }
+
+    30% {
+        transform: translate(7%, -25%)
+    }
+
+    40% {
+        transform: translate(-5%, 25%)
+    }
+
+    50% {
+        transform: translate(-15%, 10%)
+    }
+
+    60% {
+        transform: translate(15%, 0%)
+    }
+
+    70% {
+        transform: translate(0%, 15%)
+    }
+
+    80% {
+        transform: translate(3%, 35%)
+    }
+
+    90% {
+        transform: translate(-10%, 10%)
+    }
+}

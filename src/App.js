@@ -6,16 +6,30 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = { loading: true }
+
+    this.setLoading = this.setLoading.bind(this)
+  }
+
+  setLoading() {
+    this.setState({ loading: false })
   }
 
   render() {
     if (this.state.loading === true) {
+      setTimeout(() => { this.setLoading() }, 12000)
       return (
-        <Loadscreen />
+        <div className='background'>
+          <div className='outline'>
+            <Loadscreen />
+          </div>
+        </div>
+
       )
     } else {
       return (
-        <div></div>
+        <div className='background'>
+          <div className='outline'></div>
+        </div>
       )
     }
   }

@@ -35,18 +35,24 @@ class Loadscreen extends React.Component {
 
     render() {
         let text = quips[this.state.textID % quips.length]
-        if(this.state.finished === true) {
+        if (this.state.finished === true) {
             text = "done!"
         }
 
         if (text === "done!") {
             return (
                 <div className='loadContainer'>
-                    <img src={loadGif} className='loadGif' />
-                    <div className='loadOutline' >
+                    <img src={loadGif} className='loadGifStatic' />
+                    <div className='loadOutlineStatic' >
                         <div className='loadBar' />
                     </div>
-                    <div className='loadTextStatic'>done!</div>
+                    <div className='loadTextStatic'>
+                        <span className='letterFade' style={{animationDelay: '0.85s'}}>d</span>
+                        <span className='letterFade' style={{animationDelay: '0.6s'}}>o</span>
+                        <span className='letterFade' style={{animationDelay: '1s'}}>n</span>
+                        <span className='letterFade' style={{animationDelay: '1.25s'}}>e</span>
+                        <span className='letterFade' style={{animationDelay: '1.1s'}}>!</span>
+                    </div>
                 </div>
             )
         }

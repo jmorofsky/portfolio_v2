@@ -3,7 +3,7 @@
     max-width: 350px;
     min-width: 200px;
     width: 40vw;
-    margin: 10vh auto 0;
+    margin: 25vh auto 0;
 }
 
 .loadOutline {
@@ -12,7 +12,7 @@
     min-width: 200px;
     height: 7px;
     margin: 15px auto 0;
-    outline: 2px solid grey;
+    outline: 1px solid grey;
     outline-offset: 3px;
 }
 
@@ -31,6 +31,7 @@
     margin: 10px auto 0;
     font-size: 20px;
     font-family: Inconsolata;
+    user-select: none;
 }
 
 .loadText:after {
@@ -42,6 +43,26 @@
     width: 0px;
 }
 
+.loadGifStatic {
+    display: block;
+    max-width: 350px;
+    min-width: 200px;
+    width: 40vw;
+    margin: 25vh auto 0;
+    animation: fade 1s forwards 1s;
+}
+
+.loadOutlineStatic {
+    max-width: 350px;
+    width: 40vw;
+    min-width: 200px;
+    height: 7px;
+    margin: 15px auto 0;
+    outline: 1px solid grey;
+    outline-offset: 3px;
+    animation: fade 0.75s forwards 0.75s;
+}
+
 .loadTextStatic {
     max-width: 350px;
     width: 40vw;
@@ -50,15 +71,30 @@
     margin: 10px auto 0;
     font-size: 20px;
     font-family: Inconsolata;
+    user-select: none;
+}
+
+.letterFade {
+    animation: fade 0.25s forwards;
 }
 
 @media screen and (max-width: 640px) {
     .loadText {
-        font-size: 3.1vw;
+        font-size: calc(4px + 2.5vw);
     }
 
     .loadTextStatic {
-        font-size: 3.1vw;
+        font-size: calc(4px + 2.5vw);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
     }
 }
 
