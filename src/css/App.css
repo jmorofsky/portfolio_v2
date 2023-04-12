@@ -13,6 +13,7 @@
     animation: grain 8s steps(10) infinite;
     left: -50%;
     top: -100%;
+    pointer-events: none;
 }
 
 .outline {
@@ -25,12 +26,115 @@
     left: 0;
     right: 0;
     margin: auto;
+    animation: fadeIn 1s forwards;
+}
+
+.title {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 1;
+    margin: 50px 0 0 60px;
+    transition: all 1s;
+    user-select: none;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 1;
+    margin-left: 60px;
+    transition: all 1s;
+    user-select: none;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 5.5%;
+    width: 70px;
+    margin: 60px 0 0;
+    transition: opacity 0.25s;
+    cursor: pointer;
+}
+
+.nav {
+    margin: 60px 0 0 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100px;
+}
+
+.navItem {
+    font-size: 16px;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+    align-self: flex-start;
+    height: 17px;
+}
+
+.navItemSelected {
+
+}
+
+.summary {
+    color: #fff;
+    width: 120px;
+    line-height: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 6%;
+    margin: 0 0 50px;
+}
+
+@media screen and (min-width: 1000px) {
+    .title {
+        font-size: calc(35px + 1vw);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        margin-left: 12vw;
+    }
+
+    .subtitle {
+        margin-left: 12vw;
+    }
+
+    .nav {
+        margin-left: 12vw;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .outline {
         width: calc(85vw + 20px);
         height: calc(101.5vh - 15vw);
+    }
+
+    .entryText {
+        font-size: 5vw;
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        opacity: 0;
+        user-select: none;
+        cursor: default;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
@@ -70,7 +174,7 @@
     }
 
     80% {
-        transform: translate(3%, 35%)
+        transform: translate(3%, 25%)
     }
 
     90% {

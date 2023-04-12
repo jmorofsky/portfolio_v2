@@ -1,0 +1,31 @@
+.entryText {
+    color: #fff;
+    width: 480px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: Inconsolata;
+    font-size: 40px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards, fade 0.5s forwards 2.7s;
+}
+
+.entrySubtext {
+    display: inline;
+    font-weight: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .entryText {
+        width: 300px;
+    }
+
+    .entrySubtext {
+        display: block;
+    }
+}
