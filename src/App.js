@@ -7,13 +7,19 @@ import logo from './images/logo.png'
 class App extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { section: 3 }
+    this.state = { section: 2, style: ['navItem', 'navItem', 'navItem', 'navItem'] }
 
     this.setSection = this.setSection.bind(this)
   }
 
   setSection(props) {
     this.setState({ section: props })
+
+    let temp = ['navItem', 'navItem', 'navItem', 'navItem']
+    if (props > 2) {
+      temp[props - 3] = 'navItemActive'
+    }
+    this.setState({ style: temp })
   }
 
   render() {
@@ -43,29 +49,28 @@ class App extends React.Component {
               <img src={logo} className='logo' onClick={() => this.setSection(2)} />
 
               <div className='nav'>
-                <div className='navItem' onClick={() => this.setSection(3)}>
-                  <strong>About</strong>
+                <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
+                  <strong><span className='selector' style={{ opacity: '0' }}>•</span>About</strong>
                 </div>
-                <div className='navItem' onClick={() => this.setSection(4)}>
-                  <strong>Work</strong>
+                <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
+                  <strong><span className='selector' style={{ opacity: '0' }}>•</span>Work</strong>
                 </div>
-                <div className='navItem' onClick={() => this.setSection(5)}>
-                  <strong>Projects</strong>
+                <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
+                  <strong><span className='selector' style={{ opacity: '0' }}>•</span>Projects</strong>
                 </div>
-                <div className='navItem' onClick={() => this.setSection(6)}>
-                  <strong>Contact</strong>
+                <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
+                  <strong><span className='selector' style={{ opacity: '0' }}>•</span>Contact</strong>
                 </div>
               </div>
 
               <div className='summary'><strong>Born in 1999 in South Florida. Since I was a child, I
-                have loved computers and technology. I express myself using the web.
-                It is possible to create beauty and efficency through the net. I also love IT and its
-                problem-solving nature.</strong>
+                have loved computers and technology. I express myself through the web.
+                It is possible to create beauty and efficency using the internet. I also love IT and
+                its problem-solving nature.</strong>
               </div>
             </div>
           </div>
         )
-
       case 3:
         return (
           <div className='background'>
@@ -75,23 +80,27 @@ class App extends React.Component {
               <img src={logo} className='logo' onClick={() => this.setSection(2)} />
 
               <div className='nav'>
-                <div className='navItemSelected' ><strong>•</strong></div>
-                <div className='navItem' onClick={() => this.setSection(4)}>
-                  <strong>Work</strong>
+                <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
+                  <strong><span className='selector' style={{ opacity: '1' }}>•</span>About</strong>
                 </div>
-                <div className='navItem' onClick={() => this.setSection(5)}>
-                  <strong>Projects</strong>
+                <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
+                  <strong><span className='selector' style={{ opacity: '0' }}>•</span>Work</strong>
                 </div>
-                <div className='navItem' onClick={() => this.setSection(6)}>
-                  <strong>Contact</strong>
+                <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
+                  <strong><span className='selector' style={{ opacity: '0' }}>•</span>Projects</strong>
+                </div>
+                <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
+                  <strong><span className='selector' style={{ opacity: '0' }}>•</span>Contact</strong>
                 </div>
               </div>
 
-              <div className='summary'><strong>Born in 1999 in South Florida. Since I was a child, I
-                have loved computers and technology. I express myself using the web.
-                It is possible to create beauty and efficency through the net. I also love IT and its
-                problem-solving nature.</strong>
+              <div className='summary' style={{ opacity: '0' }}><strong>Born in 1999 in South Florida. Since I
+                was a child, I have loved computers and technology. I express myself through the web.
+                It is possible to create beauty and efficency using the internet. I also love IT and
+                its problem-solving nature.</strong>
               </div>
+
+              
             </div>
           </div>
         )
