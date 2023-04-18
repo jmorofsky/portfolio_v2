@@ -1,0 +1,37 @@
+.nav {
+    margin: 60px 0 0 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100px;
+    transition: all 1s;
+}
+
+.navItem {
+    margin-left: -18px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    align-self: flex-start;
+    height: 17px;
+    transition: color 0.5s;
+}
+
+.navItem:hover {
+    color: rgb(252, 244, 165);
+}
+
+.navItemActive {
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-start;
+    height: 17px;
+    transition: color 0.5s;
+    color: rgb(252, 244, 165);
+    margin-left: -18px;
+}
+
+.selector {
+    margin-right: 10px;
+    transition: opacity 0.5s;
+}

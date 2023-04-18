@@ -30,7 +30,6 @@
     color: rgb(252, 244, 165);
     margin: 10px auto 0;
     font-size: 20px;
-    user-select: none;
 }
 
 .loadText:after {
@@ -69,7 +68,6 @@
     color: rgb(252, 244, 165);
     margin: 10px auto 0;
     font-size: 20px;
-    user-select: none;
 }
 
 .letterFade {
