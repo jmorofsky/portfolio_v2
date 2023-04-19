@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      section: 2,
+      section: 3,
       style: ['navItem', 'navItem', 'navItem', 'navItem'],
       input: '',
       output1: 'JM-Linux 1.0 LTS',
@@ -22,12 +22,16 @@ class App extends React.Component {
   }
 
   setSection(props) {
-    this.setState({ section: props })
-
     let temp = ['navItem', 'navItem', 'navItem', 'navItem']
     if (props > 2) {
       temp[props - 3] = 'navItemActive'
     }
+
+    if (this.state.section != props) {
+      this.setState({ section: 8 })
+      setTimeout(() => { this.setState({ section: props }) }, 1000)
+    }
+
     this.setState({ style: temp })
   }
 
@@ -131,15 +135,15 @@ class App extends React.Component {
 
                   <div className={this.state.help}>
                     <p style={{ fontSize: '22px', margin: 0 }}>Help</p>
-                    <p style={{ margin: '10px 0' }}>JMSH is like BASH, except limited.</p>
+                    <p style={{ margin: '10px 0' }}>JMSH is just like BASH, except more limited.</p>
                     <ul>
                       <li>Type&nbsp;<span>ls</span>&nbsp;to list directory contents</li>
                       <li>Type&nbsp;<span>cd</span>&nbsp;to change directory</li>
                       <li>Type&nbsp;<span>pwd</span>&nbsp;to print name of current directory</li>
                     </ul>
 
-                    <p style={{ margin: 0, fontSize: '18px' }}>All commands</p>
-                    <p style={{ margin: '5px 0' }}>JMSH, verson 0.1.1</p>
+                    <p style={{ margin: 0 }}>All commands</p>
+                    <p style={{ margin: '5px 0' }}>JMSH, version 0.1.1</p>
                     <ul className='allCommands' style={{ padding: 0 }}>
                       <li><span>ls</span> - list directory contents</li>
                       <li><span>cd</span> - change directory</li>
@@ -170,6 +174,43 @@ class App extends React.Component {
                       </form>
                     </div>
                   </section>
+
+                  <div className='sectionContainer' style={{ opacity: 0 }}>
+                    <div className='sectionTitle'>Education History</div>
+                    <div className='educationText'>FLORIDA POLYTECHNIC UNIVERSITY</div>
+                    <div className='educationSubtext'>Bachelor of Science, Computer Science</div>
+                    <div className='educationSubtext'><strong>2021</strong></div>
+
+                    <div className='educationText'>CORAL GLADES HIGH SCHOOL</div>
+                    <div className='educationSubtext'>Coral Springs, FL</div>
+                    <div className='educationSubtext'><strong>2017</strong></div>
+
+                    <div className='sectionTitle' style={{ marginTop: '100px' }}>Skills</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '90%' }} />
+                    </div>
+                    <div className='skillSubtext'>Frontend</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '90%' }} />
+                    </div>
+                    <div className='skillSubtext'>Quality Assurance</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '80%' }} />
+                    </div>
+                    <div className='skillSubtext'>Agile Development</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '80%' }} />
+                    </div>
+                    <div className='skillSubtext'>Information Technology</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '70%' }} />
+                    </div>
+                    <div className='skillSubtext'>React</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '60%' }} />
+                    </div>
+                    <div className='skillSubtext'>Backend</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -179,37 +220,242 @@ class App extends React.Component {
         return (
           <div className='background'>
             <div className='outline'>
-              <div style={{ animation: 'fadeIn 1s forwards' }}>
-                <div className='title'>Jason Morofsky</div>
-                <div className='subtitle'>Web Development, QA, IT</div>
-                <img src={logo} className='logo' onClick={() => this.setSection(2)} />
+              <img src={logo} className='logo' onClick={() => this.setSection(2)} />
+              <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
+                <div style={{ animation: 'fadeIn 1s forwards' }}>
+                  <Stars />
+                  <div className='extraStars' >
+                    <Stars />
+                  </div>
+                  <div className='title'>
+                    <div className='r'>Jason Morofsky</div>
+                    <div className='g'>Jason Morofsky</div>
+                    <div className='b'>Jason Morofsky</div>
+                  </div>
+                  <div className='subtitle'>Web Development, QA, IT</div>
 
-                <div className='nav'>
-                  <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
-                    <strong><span className='selector' style={{ opacity: '1' }}>{'>'}</span>About</strong>
+                  <div className='nav'>
+                    <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
+                      <strong><span className='selector' style={{ opacity: '1' }}>{'>'}</span>About</strong>
+                    </div>
+                    <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
+                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Work</strong>
+                    </div>
+                    <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
+                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Projects</strong>
+                    </div>
+                    <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
+                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Contact</strong>
+                    </div>
                   </div>
-                  <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
-                    <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Work</strong>
+
+                  <div className='summary' style={{ opacity: 0 }}><strong>Born in 1999 in South Florida. Since I was a child, I
+                    have loved computers and technology. I express myself through the web.
+                    It is possible to create beauty and efficency using the internet. I also love IT and
+                    its problem-solving nature.</strong>
                   </div>
-                  <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
-                    <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Projects</strong>
+
+                  <div className={this.state.help}>
+                    <p style={{ fontSize: '22px', margin: 0 }}>Help</p>
+                    <p style={{ margin: '10px 0' }}>JMSH is just like BASH, except more limited.</p>
+                    <ul>
+                      <li>Type&nbsp;<span>ls</span>&nbsp;to list directory contents</li>
+                      <li>Type&nbsp;<span>cd</span>&nbsp;to change directory</li>
+                      <li>Type&nbsp;<span>pwd</span>&nbsp;to print name of current directory</li>
+                    </ul>
+
+                    <p style={{ margin: 0 }}>All commands</p>
+                    <p style={{ margin: '5px 0' }}>JMSH, version 0.1.1</p>
+                    <ul className='allCommands' style={{ padding: 0 }}>
+                      <li><span>ls</span> - list directory contents</li>
+                      <li><span>cd</span> - change directory</li>
+                      <li><span>echo</span> - display a line of text</li>
+                      <li><span>pwd</span> - print name of current directory</li>
+                      <li><span>mkdir</span> - make new directory</li>
+                      <li><span>touch</span> - create new file</li>
+                      <li><span>hello</span> - friendly greeting program</li>
+                    </ul>
                   </div>
-                  <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
-                    <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Contact</strong>
+
+                  <section className='jmLinuxContainer'>
+                    <div><strong>{this.state.output1}</strong></div>
+                    <div><strong>{this.state.output2}</strong></div>
+                    <div style={{ color: 'rgb(252, 244, 165)' }}>
+                      <strong>user: -$&nbsp;</strong>
+                      <form style={{ display: 'inline' }} onSubmit={this.handleSubmit}>
+                        <input type={'text'}
+                          className='input'
+                          autoFocus={true}
+                          onBlur={({ target }) => target.focus()}
+                          spellCheck='false'
+                          maxLength={21}
+                          onChange={(e) => this.setState({ input: e.target.value })}
+                          value={this.state.input}
+                        />
+                        <input type='submit' style={{ display: 'none' }} />
+                      </form>
+                    </div>
+                  </section>
+
+                  <div className='sectionContainer'>
+                    <div className='sectionTitle'>Education History</div>
+                    <div className='educationText'>FLORIDA POLYTECHNIC UNIVERSITY</div>
+                    <div className='educationSubtext'>Bachelor of Science, Computer Science</div>
+                    <div className='educationSubtext'><strong>2021</strong></div>
+
+                    <div className='educationText'>CORAL GLADES HIGH SCHOOL</div>
+                    <div className='educationSubtext'>Coral Springs, FL</div>
+                    <div className='educationSubtext'><strong>2017</strong></div>
+
+                    <div className='sectionTitle' style={{ marginTop: '100px' }}>Skills</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '90%' }} />
+                    </div>
+                    <div className='skillSubtext'>Frontend</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '90%' }} />
+                    </div>
+                    <div className='skillSubtext'>Quality Assurance</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '80%' }} />
+                    </div>
+                    <div className='skillSubtext'>Agile Development</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '80%' }} />
+                    </div>
+                    <div className='skillSubtext'>Information Technology</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '70%' }} />
+                    </div>
+                    <div className='skillSubtext'>React</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '60%' }} />
+                    </div>
+                    <div className='skillSubtext'>Backend</div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        )
 
-                <div className='summary' style={{ opacity: '0' }}><strong>Born in 1999 in South Florida. Since I
-                  was a child, I have loved computers and technology. I express myself through the web.
-                  It is possible to create beauty and efficency using the internet. I also love IT and
-                  its problem-solving nature.</strong>
-                </div>
+      default:
+        return (
+          <div className='background'>
+            <div className='outline'>
+              <img src={logo} className='logo' onClick={() => this.setSection(2)} />
+              <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
+                <div style={{ animation: 'fadeIn 1s forwards' }}>
+                  <Stars />
+                  <div className='extraStars' >
+                    <Stars />
+                  </div>
+                  <div className='title'>
+                    <div className='r'>Jason Morofsky</div>
+                    <div className='g'>Jason Morofsky</div>
+                    <div className='b'>Jason Morofsky</div>
+                  </div>
+                  <div className='subtitle'>Web Development, QA, IT</div>
 
-                <div className='educationContainer'>
-                  <div className='educationTitle'>Education History</div>
-                  <div className='educationText'>FLORIDA POLYTECHNIC UNIVERSITY</div>
-                  <div className='educationSubtext'>Bachelor of Science, Computer Science</div>
-                  <div className='educationSubtext'><strong>2021</strong></div>
+                  <div className='nav'>
+                    <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
+                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>About</strong>
+                    </div>
+                    <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
+                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Work</strong>
+                    </div>
+                    <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
+                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Projects</strong>
+                    </div>
+                    <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
+                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Contact</strong>
+                    </div>
+                  </div>
+
+                  <div className='summary' style={{ opacity: 0 }}><strong>Born in 1999 in South Florida. Since I was a child, I
+                    have loved computers and technology. I express myself through the web.
+                    It is possible to create beauty and efficency using the internet. I also love IT and
+                    its problem-solving nature.</strong>
+                  </div>
+
+                  <div className={this.state.help}>
+                    <p style={{ fontSize: '22px', margin: 0 }}>Help</p>
+                    <p style={{ margin: '10px 0' }}>JMSH is just like BASH, except more limited.</p>
+                    <ul>
+                      <li>Type&nbsp;<span>ls</span>&nbsp;to list directory contents</li>
+                      <li>Type&nbsp;<span>cd</span>&nbsp;to change directory</li>
+                      <li>Type&nbsp;<span>pwd</span>&nbsp;to print name of current directory</li>
+                    </ul>
+
+                    <p style={{ margin: 0 }}>All commands</p>
+                    <p style={{ margin: '5px 0' }}>JMSH, version 0.1.1</p>
+                    <ul className='allCommands' style={{ padding: 0 }}>
+                      <li><span>ls</span> - list directory contents</li>
+                      <li><span>cd</span> - change directory</li>
+                      <li><span>echo</span> - display a line of text</li>
+                      <li><span>pwd</span> - print name of current directory</li>
+                      <li><span>mkdir</span> - make new directory</li>
+                      <li><span>touch</span> - create new file</li>
+                      <li><span>hello</span> - friendly greeting program</li>
+                    </ul>
+                  </div>
+
+                  <section className='jmLinuxContainer'>
+                    <div><strong>{this.state.output1}</strong></div>
+                    <div><strong>{this.state.output2}</strong></div>
+                    <div style={{ color: 'rgb(252, 244, 165)' }}>
+                      <strong>user: -$&nbsp;</strong>
+                      <form style={{ display: 'inline' }} onSubmit={this.handleSubmit}>
+                        <input type={'text'}
+                          className='input'
+                          autoFocus={true}
+                          onBlur={({ target }) => target.focus()}
+                          spellCheck='false'
+                          maxLength={21}
+                          onChange={(e) => this.setState({ input: e.target.value })}
+                          value={this.state.input}
+                        />
+                        <input type='submit' style={{ display: 'none' }} />
+                      </form>
+                    </div>
+                  </section>
+
+                  <div className='sectionContainer' style={{ opacity: 0 }}>
+                    <div className='sectionTitle'>Education History</div>
+                    <div className='educationText'>FLORIDA POLYTECHNIC UNIVERSITY</div>
+                    <div className='educationSubtext'>Bachelor of Science, Computer Science</div>
+                    <div className='educationSubtext'><strong>2021</strong></div>
+
+                    <div className='educationText'>CORAL GLADES HIGH SCHOOL</div>
+                    <div className='educationSubtext'>Coral Springs, FL</div>
+                    <div className='educationSubtext'><strong>2017</strong></div>
+
+                    <div className='sectionTitle' style={{ marginTop: '100px' }}>Skills</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '90%' }} />
+                    </div>
+                    <div className='skillSubtext'>Frontend</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '90%' }} />
+                    </div>
+                    <div className='skillSubtext'>Quality Assurance</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '80%' }} />
+                    </div>
+                    <div className='skillSubtext'>Agile Development</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '80%' }} />
+                    </div>
+                    <div className='skillSubtext'>Information Technology</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '70%' }} />
+                    </div>
+                    <div className='skillSubtext'>React</div>
+                    <div className='skillOutline'>
+                      <div className='skillBar' style={{ width: '60%' }} />
+                    </div>
+                    <div className='skillSubtext'>Backend</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -222,8 +468,8 @@ class App extends React.Component {
 export default App
 
 /* homepage has short summary
-              about has education, skills, tools
-              work has work experience
+              about has education, skills, tools - bar format
+              work has work experience and certs
               projects has list of projects and stats
-              contact has contact info and socials 
+              contact has contact info and socials resume dl
               distortion / glitch animation*/
