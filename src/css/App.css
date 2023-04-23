@@ -288,7 +288,7 @@
     right: 60px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
     text-align: right;
     transition: opacity 0.5s;
 }

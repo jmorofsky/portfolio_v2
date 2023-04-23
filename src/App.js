@@ -4,6 +4,7 @@ import Loadscreen from './components/Loadscreen'
 import Entry from './components/Entry'
 import Stars from './components/Stars'
 import logo from './images/logo.png'
+import Resume from './Resume.pdf'
 
 class App extends React.Component {
   constructor(props) {
@@ -770,6 +771,8 @@ class App extends React.Component {
                       GitHub ↗</a></strong></div>
                     <div><strong><a href='mailto:contact@jasonmorofsky.com' title='Email me'>
                       contact@jasonmorofsky.com ↗</a></strong></div>
+                    <div><strong><a href={Resume} download='jason_morofsky_resume' title='Download me'>
+                      Resume ↓</a></strong></div>
                   </div>
                 </div>
               </div>
