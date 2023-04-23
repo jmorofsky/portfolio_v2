@@ -151,7 +151,7 @@
     transition: all 1s;
 }
 
-.educationText {
+.sectionText {
     margin-top: 35px;
     font-weight: 1;
     font-size: 32px;
@@ -159,7 +159,7 @@
     transition: all 1s;
 }
 
-.educationSubtext {
+.sectionSubtext {
     margin: 0 50px 4px;
     transition: all 1s;
 }
@@ -265,6 +265,20 @@
     margin: 0 50px 4px;
     color: rgb(252, 244, 165);
     transition: margin 1s;
+}
+
+.workSummary {
+    width: 300px;
+    margin-right: 40px;
+}
+
+.workSummary li {
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+
+.workSummary span {
+    color: rgb(252, 244, 165);
 }
 
 @media screen and (min-width: 1000px) {
