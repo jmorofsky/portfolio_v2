@@ -9,7 +9,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      section: 4,
+      section: 0,
       style: ['navItem', 'navItem', 'navItem', 'navItem'],
       input: '',
       output1: 'JM-Linux 1.0 LTS',
@@ -28,8 +28,12 @@ class App extends React.Component {
     }
 
     if (this.state.section != props) {
-      this.setState({ section: 8 })
-      setTimeout(() => { this.setState({ section: props }) }, 1000)
+      if (props > 2 || this.state.section > 2) {
+        this.setState({ section: 8 })
+        setTimeout(() => { this.setState({ section: props }) }, 1000)
+      } else {
+        this.setState({ section: props })
+      }
     }
 
     this.setState({ style: temp })
