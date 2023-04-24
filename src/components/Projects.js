@@ -8,6 +8,11 @@ function Projects(props) {
 
             <div className='sectionText'>jasonmorofsky.com v2</div>
             <div className='sectionSubtext'>https://jasonmorofsky.com</div>
+            <div className='sectionSubtext'>
+                <a href='https://docs.github.com/en/rest?apiVersion=2022-11-28' target="_blank" rel="noreferrer">
+                    https://docs.github.com/en/rest ↗
+                </a>
+            </div>
             <div className='sectionSubtext'><strong>April 2023</strong></div>
             <div className='projectSummary'>This website! My <span>interactive portfolio, </span>
                 complete with a basic form of BASH. Created with HTML, CSS, and JavaScript, using React
@@ -35,7 +40,7 @@ function Projects(props) {
 
             <div className='sectionText'>Calculator</div>
             <div className='sectionSubtext'>
-                <a href='https://github.com/jmorofsky/calculator'>
+                <a href='https://github.com/jmorofsky/calculator' target="_blank" rel="noreferrer">
                     https://github.com/jmorofsky/calculator ↗
                 </a>
             </div>
@@ -59,12 +64,12 @@ function Projects(props) {
 
             <div className='sectionText'>jasonmorofsky.com v1</div>
             <div className='sectionSubtext'>
-                <a href='https://github.com/jmorofsky/my-portfolio'>
+                <a href='https://github.com/jmorofsky/my-portfolio' target="_blank" rel="noreferrer">
                     https://github.com/jmorofsky/my-portfolio ↗
                 </a>
             </div>
             <div className='sectionSubtext'><strong>Summer 2021</strong></div>
-            <div className='projectSummary'>My original <span>portfolio.</span> The first web project
+            <div className='projectSummary'>My original <span>portfolio.</span> It is the first web project
                 I ever created, and how I learned to design, build, and publish a website.
             </div>
         </div>

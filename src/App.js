@@ -10,6 +10,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import About from './components/About'
 import JML from './components/JML'
+import Nav from './components/Nav'
 import logo from './images/logo.png'
 
 class App extends React.Component {
@@ -94,23 +95,8 @@ class App extends React.Component {
                   <div className='extraStars' >
                     <Stars />
                   </div>
-
                   <Title />
-
-                  <div className='nav'>
-                    <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>About</strong>
-                    </div>
-                    <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Work</strong>
-                    </div>
-                    <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Projects</strong>
-                    </div>
-                    <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Contact</strong>
-                    </div>
-                  </div>
+                  <Nav style={this.state.style} val='0' setSection={this.setSection} />
 
                   <Summary />
                   <JML section={this.state.section} />
@@ -135,23 +121,8 @@ class App extends React.Component {
                   <div className='extraStars' >
                     <Stars />
                   </div>
-
                   <Title />
-
-                  <div className='nav'>
-                    <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
-                      <strong><span className='selector' style={{ opacity: '1' }}>{'>'}</span>About</strong>
-                    </div>
-                    <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Work</strong>
-                    </div>
-                    <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Projects</strong>
-                    </div>
-                    <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Contact</strong>
-                    </div>
-                  </div>
+                  <Nav style={this.state.style} val='1' setSection={this.setSection} />
 
                   <Summary style={{ opacity: 0 }} />
                   <JML section={this.state.section} />
@@ -176,23 +147,8 @@ class App extends React.Component {
                   <div className='extraStars' >
                     <Stars />
                   </div>
-
                   <Title />
-
-                  <div className='nav'>
-                    <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>About</strong>
-                    </div>
-                    <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
-                      <strong><span className='selector' style={{ opacity: '1' }}>{'>'}</span>Work</strong>
-                    </div>
-                    <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Projects</strong>
-                    </div>
-                    <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Contact</strong>
-                    </div>
-                  </div>
+                  <Nav style={this.state.style} val='2' setSection={this.setSection} />
 
                   <Summary style={{ opacity: 0 }} />
                   <JML section={this.state.section} />
@@ -217,23 +173,8 @@ class App extends React.Component {
                   <div className='extraStars' >
                     <Stars />
                   </div>
-
                   <Title />
-
-                  <div className='nav'>
-                    <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>About</strong>
-                    </div>
-                    <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Work</strong>
-                    </div>
-                    <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
-                      <strong><span className='selector' style={{ opacity: '1' }}>{'>'}</span>Projects</strong>
-                    </div>
-                    <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Contact</strong>
-                    </div>
-                  </div>
+                  <Nav style={this.state.style} val='3' setSection={this.setSection} />
 
                   <Summary style={{ opacity: 0 }} />
                   <JML section={this.state.section} />
@@ -258,23 +199,8 @@ class App extends React.Component {
                   <div className='extraStars' >
                     <Stars />
                   </div>
-
                   <Title />
-
-                  <div className='nav'>
-                    <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>About</strong>
-                    </div>
-                    <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Work</strong>
-                    </div>
-                    <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Projects</strong>
-                    </div>
-                    <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
-                      <strong><span className='selector' style={{ opacity: '1' }}>{'>'}</span>Contact</strong>
-                    </div>
-                  </div>
+                  <Nav style={this.state.style} val='4' setSection={this.setSection} />
 
                   <Summary style={{ opacity: 0 }} />
                   <JML section={this.state.section} />
@@ -299,23 +225,8 @@ class App extends React.Component {
                   <div className='extraStars' >
                     <Stars />
                   </div>
-
                   <Title />
-
-                  <div className='nav'>
-                    <div className={this.state.style[0]} onClick={() => this.setSection(3)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>About</strong>
-                    </div>
-                    <div className={this.state.style[1]} onClick={() => this.setSection(4)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Work</strong>
-                    </div>
-                    <div className={this.state.style[2]} onClick={() => this.setSection(5)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Projects</strong>
-                    </div>
-                    <div className={this.state.style[3]} onClick={() => this.setSection(6)}>
-                      <strong><span className='selector' style={{ opacity: '0' }}>{'>'}</span>Contact</strong>
-                    </div>
-                  </div>
+                  <Nav style={this.state.style} val='0' setSection={this.setSection} />
 
                   <Summary style={{ opacity: 0 }} />
                   <JML section={this.state.section} />
@@ -334,8 +245,8 @@ class App extends React.Component {
 
 export default App
 
-/*            distortion / glitch animation
-              finish jmsh commands
-              turn sections into components
-              get rid of walls of divs
-              comments*/
+/*
+  distortion / glitch animation
+  finish jmsh commands
+  add responsiveness
+*/
