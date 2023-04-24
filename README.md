@@ -2,4 +2,4 @@
  
 My personal portfolio. Created entirely using HTML, CSS, and JS with React.  
   
-Contact me at contact@jasonmorofsky.com or (954) 609-9587.  
+Contact me at contact@jasonmorofsky.com.  

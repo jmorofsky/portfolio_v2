@@ -135,20 +135,25 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
     color: #fff;
-    width: 580px;
+    width: 530px;
+    height: 100%;
     position: absolute;
-    top: 80px;
+    top: 0;
     right: 0;
-    transition: all 0.5s;
+    transition: opacity 0.5s;
+}
+
+.sectionContainer a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .sectionTitle {
     width: 200px;
     font-size: 18px;
     border-bottom: 1px solid grey;
-    transition: all 1s;
 }
 
 .sectionText {
@@ -156,12 +161,10 @@
     font-weight: 1;
     font-size: 32px;
     margin-right: 50px;
-    transition: all 1s;
 }
 
 .sectionSubtext {
     margin: 0 50px 4px;
-    transition: all 1s;
 }
 
 .jmLinuxContainer {
@@ -298,6 +301,29 @@
     text-decoration: none;
 }
 
+.projectSummary {
+    margin: 20px 40px 0 0;
+    width: 350px;
+}
+
+.projectSummary span {
+    color: rgb(252, 244, 165);
+}
+
+@media screen and (max-height: 900px), screen and (max-width: 800px) {
+    .jmLinuxContainer {
+        display: none;
+    }
+
+    .helpActive {
+        display: none;
+    }
+
+    .helpinActive {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .title {
         font-size: calc(35px + 1vw);
@@ -311,20 +337,14 @@
 }
 
 @media screen and (max-width: 1100px) {
-    .educationText {
+    .sectionText {
         font-size: 25px;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .educationText {
+    .sectionText {
         font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 870px) {
-    .sectionContainer {
-        top: 330px;
     }
 }
 
@@ -345,11 +365,11 @@
         width: 155px;
     }
 
-    .educationText{
+    .sectionText{
         margin-right: 5px;
     }
 
-    .educationSubtext {
+    .sectionSubtext {
         margin: 0 5px 4px;
     }
 
