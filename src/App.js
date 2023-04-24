@@ -8,8 +8,8 @@ import Summary from './components/Summary'
 import Work from './components/Work'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
-import Help from './components/Help'
 import About from './components/About'
+import JML from './components/JML'
 import logo from './images/logo.png'
 
 class App extends React.Component {
@@ -18,15 +18,10 @@ class App extends React.Component {
     this.state = {
       section: 1,
       style: ['navItem', 'navItem', 'navItem', 'navItem'],
-      input: '',
-      output1: 'JM-Linux 1.0 LTS',
-      output2: 'Type <help> to get started',
-      help: 'helpInactive',
       stats: []
     }
 
     this.setSection = this.setSection.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   componentDidMount() {
@@ -64,43 +59,6 @@ class App extends React.Component {
     }
 
     this.setState({ style: temp })
-  }
-
-  handleSubmit(e) {
-    e.preventDefault()
-
-    this.setState({ help: 'helpInactive' })
-    let temp = this.state.output2
-    if (this.state.input === 'help') {
-      this.setState({ output1: temp, output2: this.state.input, help: 'helpActive' })
-    } else if (this.state.input === 'hello') {
-      this.setState({ output1: temp, output2: 'Hello, world!' })
-    } else if (this.state.input.includes('echo ')) {
-      let sub = this.state.input.substring(5)
-      this.setState({ output1: temp, output2: sub })
-    } else if (this.state.input === 'pwd') {
-      switch (this.state.section) {
-        case 3:
-          this.setState({ output1: temp, output2: '/home/user/about' })
-          break
-        case 4:
-          this.setState({ output1: temp, output2: '/home/user/work' })
-          break
-        case 5:
-          this.setState({ output1: temp, output2: '/home/user/projects' })
-          break
-        case 6:
-          this.setState({ output1: temp, output2: '/home/user/contact' })
-          break
-        default:
-          this.setState({ output1: temp, output2: '/home/user' })
-      }
-    } else {
-      let error = this.state.input + ': command not recognized'
-      this.setState({ output1: temp, output2: error })
-    }
-
-    this.setState({ input: '' })
   }
 
   render() {
@@ -155,29 +113,7 @@ class App extends React.Component {
                   </div>
 
                   <Summary />
-
-                  <Help help={this.state.help} />
-
-                  <section className='jmLinuxContainer'>
-                    <div><strong>{this.state.output1}</strong></div>
-                    <div><strong>{this.state.output2}</strong></div>
-                    <div style={{ color: 'rgb(252, 244, 165)' }}>
-                      <strong>user: -$&nbsp;</strong>
-                      <form style={{ display: 'inline' }} onSubmit={this.handleSubmit}>
-                        <input type={'text'}
-                          className='input'
-                          autoFocus={true}
-                          onBlur={({ target }) => target.focus()}
-                          spellCheck='false'
-                          maxLength={21}
-                          onChange={(e) => this.setState({ input: e.target.value })}
-                          value={this.state.input}
-                        />
-                        <input type='submit' style={{ display: 'none' }} />
-                      </form>
-                    </div>
-                  </section>
-
+                  <JML section={this.state.section} />
                   <About stats={this.state.stats} style={{ opacity: 0 }} />
                   <Work style={{ opacity: 0 }} />
                   <Projects style={{ opacity: 0 }} />
@@ -218,29 +154,7 @@ class App extends React.Component {
                   </div>
 
                   <Summary style={{ opacity: 0 }} />
-
-                  <Help help={this.state.help} />
-
-                  <section className='jmLinuxContainer'>
-                    <div><strong>{this.state.output1}</strong></div>
-                    <div><strong>{this.state.output2}</strong></div>
-                    <div style={{ color: 'rgb(252, 244, 165)' }}>
-                      <strong>user: -$&nbsp;</strong>
-                      <form style={{ display: 'inline' }} onSubmit={this.handleSubmit}>
-                        <input type={'text'}
-                          className='input'
-                          autoFocus={true}
-                          onBlur={({ target }) => target.focus()}
-                          spellCheck='false'
-                          maxLength={21}
-                          onChange={(e) => this.setState({ input: e.target.value })}
-                          value={this.state.input}
-                        />
-                        <input type='submit' style={{ display: 'none' }} />
-                      </form>
-                    </div>
-                  </section>
-
+                  <JML section={this.state.section} />
                   <About stats={this.state.stats} />
                   <Work style={{ opacity: 0 }} />
                   <Projects style={{ opacity: 0 }} />
@@ -281,29 +195,7 @@ class App extends React.Component {
                   </div>
 
                   <Summary style={{ opacity: 0 }} />
-
-                  <Help help={this.state.help} />
-
-                  <section className='jmLinuxContainer'>
-                    <div><strong>{this.state.output1}</strong></div>
-                    <div><strong>{this.state.output2}</strong></div>
-                    <div style={{ color: 'rgb(252, 244, 165)' }}>
-                      <strong>user: -$&nbsp;</strong>
-                      <form style={{ display: 'inline' }} onSubmit={this.handleSubmit}>
-                        <input type={'text'}
-                          className='input'
-                          autoFocus={true}
-                          onBlur={({ target }) => target.focus()}
-                          spellCheck='false'
-                          maxLength={21}
-                          onChange={(e) => this.setState({ input: e.target.value })}
-                          value={this.state.input}
-                        />
-                        <input type='submit' style={{ display: 'none' }} />
-                      </form>
-                    </div>
-                  </section>
-
+                  <JML section={this.state.section} />
                   <About stats={this.state.stats} style={{ opacity: 0 }} />
                   <Work />
                   <Projects style={{ opacity: 0 }} />
@@ -344,29 +236,7 @@ class App extends React.Component {
                   </div>
 
                   <Summary style={{ opacity: 0 }} />
-
-                  <Help help={this.state.help} />
-
-                  <section className='jmLinuxContainer'>
-                    <div><strong>{this.state.output1}</strong></div>
-                    <div><strong>{this.state.output2}</strong></div>
-                    <div style={{ color: 'rgb(252, 244, 165)' }}>
-                      <strong>user: -$&nbsp;</strong>
-                      <form style={{ display: 'inline' }} onSubmit={this.handleSubmit}>
-                        <input type={'text'}
-                          className='input'
-                          autoFocus={true}
-                          onBlur={({ target }) => target.focus()}
-                          spellCheck='false'
-                          maxLength={21}
-                          onChange={(e) => this.setState({ input: e.target.value })}
-                          value={this.state.input}
-                        />
-                        <input type='submit' style={{ display: 'none' }} />
-                      </form>
-                    </div>
-                  </section>
-
+                  <JML section={this.state.section} />
                   <About stats={this.state.stats} style={{ opacity: 0 }} />
                   <Work style={{ opacity: 0 }} />
                   <Projects />
@@ -407,29 +277,7 @@ class App extends React.Component {
                   </div>
 
                   <Summary style={{ opacity: 0 }} />
-
-                  <Help help={this.state.help} />
-
-                  <section className='jmLinuxContainer'>
-                    <div><strong>{this.state.output1}</strong></div>
-                    <div><strong>{this.state.output2}</strong></div>
-                    <div style={{ color: 'rgb(252, 244, 165)' }}>
-                      <strong>user: -$&nbsp;</strong>
-                      <form style={{ display: 'inline' }} onSubmit={this.handleSubmit}>
-                        <input type={'text'}
-                          className='input'
-                          autoFocus={true}
-                          onBlur={({ target }) => target.focus()}
-                          spellCheck='false'
-                          maxLength={21}
-                          onChange={(e) => this.setState({ input: e.target.value })}
-                          value={this.state.input}
-                        />
-                        <input type='submit' style={{ display: 'none' }} />
-                      </form>
-                    </div>
-                  </section>
-
+                  <JML section={this.state.section} />
                   <About stats={this.state.stats} style={{ opacity: 0 }} />
                   <Work style={{ opacity: 0 }} />
                   <Projects style={{ opacity: 0 }} />
@@ -470,29 +318,7 @@ class App extends React.Component {
                   </div>
 
                   <Summary style={{ opacity: 0 }} />
-
-                  <Help help={this.state.help} />
-
-                  <section className='jmLinuxContainer'>
-                    <div><strong>{this.state.output1}</strong></div>
-                    <div><strong>{this.state.output2}</strong></div>
-                    <div style={{ color: 'rgb(252, 244, 165)' }}>
-                      <strong>user: -$&nbsp;</strong>
-                      <form style={{ display: 'inline' }} onSubmit={this.handleSubmit}>
-                        <input type={'text'}
-                          className='input'
-                          autoFocus={true}
-                          onBlur={({ target }) => target.focus()}
-                          spellCheck='false'
-                          maxLength={21}
-                          onChange={(e) => this.setState({ input: e.target.value })}
-                          value={this.state.input}
-                        />
-                        <input type='submit' style={{ display: 'none' }} />
-                      </form>
-                    </div>
-                  </section>
-
+                  <JML section={this.state.section} />
                   <About stats={this.state.stats} style={{ opacity: 0 }} />
                   <Work style={{ opacity: 0 }} />
                   <Projects style={{ opacity: 0 }} />

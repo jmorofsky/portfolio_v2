@@ -119,43 +119,6 @@
     margin: 0 50px 4px;
 }
 
-.jmLinuxContainer {
-    position: absolute;
-    bottom: 50px;
-    left: 60px;
-    color: #fff;
-    line-height: 20px;
-}
-
-.input {
-    border: none;
-    background: transparent;
-    color: rgb(252, 244, 165);
-    font-family: Inconsolata;
-    font-weight: bolder;
-    outline: none;
-    font-size: 16px;
-}
-
-.input::selection {
-    color: black;
-    background: rgb(252, 244, 165);
-}
-
-@media screen and (max-height: 900px), screen and (max-width: 800px) {
-    .jmLinuxContainer {
-        display: none;
-    }
-
-    .helpActive {
-        display: none;
-    }
-
-    .helpinActive {
-        display: none;
-    }
-}
-
 @media screen and (min-width: 2000px) {
     .extraStars {
         opacity: 1;
