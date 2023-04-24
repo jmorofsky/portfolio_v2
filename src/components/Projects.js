@@ -17,12 +17,12 @@ function Projects(props) {
 
             <div className='sectionText'>Hangman</div>
             <div className='sectionSubtext'>
-                <a href='https://github.com/jmorofsky/hangman' target="_blank">
+                <a href='https://github.com/jmorofsky/hangman' target="_blank" rel="noreferrer">
                     https://github.com/jmorofsky/hangman ↗
                 </a>
             </div>
             <div className='sectionSubtext'>
-                <a href='https://random-word-api.herokuapp.com' target="_blank">
+                <a href='https://random-word-api.herokuapp.com' target="_blank" rel="noreferrer">
                     https://random-word-api.herokuapp.com ↗
                 </a>
             </div>
@@ -46,7 +46,7 @@ function Projects(props) {
 
             <div className='sectionText'>Medicare with Meghan Morofsky</div>
             <div className='sectionSubtext'>
-                <a href='https://meghanexplainsmedicare.com' target="_blank">
+                <a href='https://meghanexplainsmedicare.com' target="_blank" rel="noreferrer">
                     https://meghanexplainsmedicare.com ↗
                 </a>
             </div>

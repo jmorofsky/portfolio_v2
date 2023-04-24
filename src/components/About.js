@@ -2,10 +2,6 @@ import React from 'react'
 import '../css/About.css'
 
 class About extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className='sectionContainer' style={this.props.style}>

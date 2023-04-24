@@ -54,7 +54,7 @@ class App extends React.Component {
       temp[props - 3] = 'navItemActive'
     }
 
-    if (this.state.section != props) {
+    if (this.state.section !== props) {
       if (props > 2 || this.state.section > 2) {
         this.setState({ section: 8 })
         setTimeout(() => { this.setState({ section: props }) }, 1000)
@@ -129,7 +129,7 @@ class App extends React.Component {
         return (
           <div className='background'>
             <div className='outline'>
-              <img src={logo} className='logo' onClick={() => this.setSection(2)} />
+              <img src={logo} className='logo' onClick={() => this.setSection(2)} alt='' />
               <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
                 <div style={{ animation: 'fadeIn 1s forwards' }}>
                   <Stars />
@@ -192,7 +192,7 @@ class App extends React.Component {
         return (
           <div className='background'>
             <div className='outline'>
-              <img src={logo} className='logo' onClick={() => this.setSection(2)} />
+              <img src={logo} className='logo' onClick={() => this.setSection(2)} alt='' />
               <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
                 <div style={{ animation: 'fadeIn 1s forwards' }}>
                   <Stars />
@@ -255,7 +255,7 @@ class App extends React.Component {
         return (
           <div className='background'>
             <div className='outline'>
-              <img src={logo} className='logo' onClick={() => this.setSection(2)} />
+              <img src={logo} className='logo' onClick={() => this.setSection(2)} alt='' />
               <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
                 <div style={{ animation: 'fadeIn 1s forwards' }}>
                   <Stars />
@@ -318,7 +318,7 @@ class App extends React.Component {
         return (
           <div className='background'>
             <div className='outline'>
-              <img src={logo} className='logo' onClick={() => this.setSection(2)} />
+              <img src={logo} className='logo' onClick={() => this.setSection(2)} alt='' />
               <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
                 <div style={{ animation: 'fadeIn 1s forwards' }}>
                   <Stars />
@@ -381,7 +381,7 @@ class App extends React.Component {
         return (
           <div className='background'>
             <div className='outline'>
-              <img src={logo} className='logo' onClick={() => this.setSection(2)} />
+              <img src={logo} className='logo' onClick={() => this.setSection(2)} alt='' />
               <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
                 <div style={{ animation: 'fadeIn 1s forwards' }}>
                   <Stars />
@@ -444,7 +444,7 @@ class App extends React.Component {
         return (
           <div className='background'>
             <div className='outline'>
-              <img src={logo} className='logo' onClick={() => this.setSection(2)} />
+              <img src={logo} className='logo' onClick={() => this.setSection(2)} alt='' />
               <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
                 <div style={{ animation: 'fadeIn 1s forwards' }}>
                   <Stars />
@@ -509,6 +509,7 @@ class App extends React.Component {
 export default App
 
 /*            distortion / glitch animation
+              finish jmsh commands
               turn sections into components
               get rid of walls of divs
               comments*/
