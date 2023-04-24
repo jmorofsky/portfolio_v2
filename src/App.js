@@ -10,16 +10,36 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      section: 5,
+      section: 1,
       style: ['navItem', 'navItem', 'navItem', 'navItem'],
       input: '',
       output1: 'JM-Linux 1.0 LTS',
       output2: 'Type <help> to get started',
-      help: 'helpInactive'
+      help: 'helpInactive',
+      stats: []
     }
 
     this.setSection = this.setSection.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  componentDidMount() {
+    fetch("https://www.googleapis.com/storage/v1/b/jasonmorofsky/o/statsData.json")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          let url = result.mediaLink
+          fetch(url)
+            .then(res => res.json())
+            .then(
+              (result) => {
+                this.setState({
+                  stats: result.stats
+                })
+              }
+            )
+        }
+      )
   }
 
   setSection(props) {
@@ -215,6 +235,31 @@ class App extends React.Component {
                       <div className='skillBar' style={{ width: '60%' }} />
                     </div>
                     <div className='skillSubtext'>Backend</div>
+
+                    <div className='sectionTitle' style={{ marginTop: '100px' }}>Some GitHub Stats</div>
+                    <div className='statsContainer'>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[0].value}</div>
+                        Projects</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[5].value}</div>
+                        Languages Used</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[1].value}</div>
+                        Commits</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[2].value}</div>
+                        Deletions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[3].value}</div>
+                        Additions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[4].value}</div>
+                        KB of Code</div>
+                    </div>
+                    <div style={{ width: '330px', margin: '15px 50px 0 0', fontWeight: 1 }}>These stats are 
+                    updated automatically every day. Last update:&nbsp;{this.state.stats[8].value}.
+                    </div>
                   </div>
 
                   <div className='sectionContainer' style={{ opacity: 0 }}>
@@ -337,6 +382,7 @@ class App extends React.Component {
             </div>
           </div>
         )
+
       case 3:
         return (
           <div className='background'>
@@ -453,6 +499,31 @@ class App extends React.Component {
                       <div className='skillBar' style={{ width: '60%' }} />
                     </div>
                     <div className='skillSubtext'>Backend</div>
+
+                    <div className='sectionTitle' style={{ marginTop: '100px' }}>Some GitHub Stats</div>
+                    <div className='statsContainer'>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[0].value}</div>
+                        Projects</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[5].value}</div>
+                        Languages Used</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[1].value}</div>
+                        Commits</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[2].value}</div>
+                        Deletions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[3].value}</div>
+                        Additions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[4].value}</div>
+                        KB of Code</div>
+                    </div>
+                    <div style={{ width: '330px', margin: '15px 50px 0 0', fontWeight: 1 }}>These stats are 
+                    updated automatically every day. Last update:&nbsp;{this.state.stats[8].value}.
+                    </div>
                   </div>
 
                   <div className='sectionContainer' style={{ opacity: 0 }}>
@@ -692,6 +763,31 @@ class App extends React.Component {
                       <div className='skillBar' style={{ width: '60%' }} />
                     </div>
                     <div className='skillSubtext'>Backend</div>
+
+                    <div className='sectionTitle' style={{ marginTop: '100px' }}>Some GitHub Stats</div>
+                    <div className='statsContainer'>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[0].value}</div>
+                        Projects</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[5].value}</div>
+                        Languages Used</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[1].value}</div>
+                        Commits</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[2].value}</div>
+                        Deletions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[3].value}</div>
+                        Additions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[4].value}</div>
+                        KB of Code</div>
+                    </div>
+                    <div style={{ width: '330px', margin: '15px 50px 0 0', fontWeight: 1 }}>These stats are 
+                    updated automatically every day. Last update:&nbsp;{this.state.stats[8].value}.
+                    </div>
                   </div>
 
                   <div className='sectionContainer'>
@@ -931,6 +1027,31 @@ class App extends React.Component {
                       <div className='skillBar' style={{ width: '60%' }} />
                     </div>
                     <div className='skillSubtext'>Backend</div>
+
+                    <div className='sectionTitle' style={{ marginTop: '100px' }}>Some GitHub Stats</div>
+                    <div className='statsContainer'>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[0].value}</div>
+                        Projects</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[5].value}</div>
+                        Languages Used</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[1].value}</div>
+                        Commits</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[2].value}</div>
+                        Deletions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[3].value}</div>
+                        Additions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[4].value}</div>
+                        KB of Code</div>
+                    </div>
+                    <div style={{ width: '330px', margin: '15px 50px 0 0', fontWeight: 1 }}>These stats are 
+                    updated automatically every day. Last update:&nbsp;{this.state.stats[8].value}.
+                    </div>
                   </div>
 
                   <div className='sectionContainer' style={{ opacity: 0 }}>
@@ -1170,6 +1291,31 @@ class App extends React.Component {
                       <div className='skillBar' style={{ width: '60%' }} />
                     </div>
                     <div className='skillSubtext'>Backend</div>
+
+                    <div className='sectionTitle' style={{ marginTop: '100px' }}>Some GitHub Stats</div>
+                    <div className='statsContainer'>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[0].value}</div>
+                        Projects</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[5].value}</div>
+                        Languages Used</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[1].value}</div>
+                        Commits</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[2].value}</div>
+                        Deletions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[3].value}</div>
+                        Additions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[4].value}</div>
+                        KB of Code</div>
+                    </div>
+                    <div style={{ width: '330px', margin: '15px 50px 0 0', fontWeight: 1 }}>These stats are 
+                    updated automatically every day. Last update:&nbsp;{this.state.stats[8].value}.
+                    </div>
                   </div>
 
                   <div className='sectionContainer' style={{ opacity: 0 }}>
@@ -1409,6 +1555,31 @@ class App extends React.Component {
                       <div className='skillBar' style={{ width: '60%' }} />
                     </div>
                     <div className='skillSubtext'>Backend</div>
+
+                    <div className='sectionTitle' style={{ marginTop: '100px' }}>Some GitHub Stats</div>
+                    <div className='statsContainer'>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[0].value}</div>
+                        Projects</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[5].value}</div>
+                        Languages Used</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[1].value}</div>
+                        Commits</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[2].value}</div>
+                        Deletions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[3].value}</div>
+                        Additions</div>
+                      <div>
+                        <div className='statsValue'>{this.state.stats[4].value}</div>
+                        KB of Code</div>
+                    </div>
+                    <div style={{ width: '330px', margin: '15px 50px 0 0', fontWeight: 1 }}>These stats are 
+                    updated automatically every day. Last update:&nbsp;{this.state.stats[8].value}.
+                    </div>
                   </div>
 
                   <div className='sectionContainer' style={{ opacity: 0 }}>
@@ -1537,11 +1708,7 @@ class App extends React.Component {
 
 export default App
 
-/* homepage has short summary
-              about has education, skills, tools - bar format
-              work has work experience and certs
-              projects has list of projects and stats
-              contact has contact info and socials resume dl
+/* add stats animation
               distortion / glitch animation
               turn sections into components
               get rid of walls of divs

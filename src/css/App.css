@@ -271,6 +271,20 @@
     transition: margin 1s;
 }
 
+.statsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    gap: 20px 10px;
+    justify-content: space-evenly;
+    margin: 30px 40px 0 0;
+}
+
+.statsValue {
+    text-align: center;
+    color: rgb(252, 244, 165);
+}
+
 .workSummary {
     width: 300px;
     margin-right: 40px;
