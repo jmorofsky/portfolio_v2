@@ -1,0 +1,8 @@
+.projectSummary {
+    margin: 8px 40px 0 0;
+    width: 350px;
+}
+
+.projectSummary span {
+    color: rgb(252, 244, 165);
+}

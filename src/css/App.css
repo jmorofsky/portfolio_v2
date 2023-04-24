@@ -34,44 +34,6 @@
     opacity: 0;
 }
 
-.title {
-    color: #fff;
-    font-size: 35px;
-    margin: 50px 0 0 60px;
-    transition: all 1s;
-}
-
-.title>* {
-    animation: crt 3s ease infinite;
-    mix-blend-mode: difference;
-}
-
-.r {
-    color: #f00;
-    left: -0.5px;
-}
-
-.g {
-    margin-top: -1em;
-    color: #0f0;
-    animation-delay: -0.5s;
-}
-
-.b {
-    margin-top: -1em;
-    color: #00f;
-    animation-delay: -0.33s;
-    left: 0.5px;
-}
-
-.subtitle {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 1;
-    margin-left: 60px;
-    transition: all 1s;
-}
-
 .logo {
     position: absolute;
     top: 20px;
@@ -118,16 +80,6 @@
 
 .selector {
     margin-right: 10px;
-    transition: opacity 0.5s;
-}
-
-.summary {
-    color: #fff;
-    width: 120px;
-    line-height: 20px;
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
     transition: opacity 0.5s;
 }
 
@@ -190,140 +142,6 @@
     background: rgb(252, 244, 165);
 }
 
-.helpInactive {
-    position: absolute;
-    bottom: 120px;
-    left: 60px;
-    font-weight: bolder;
-    color: #fff;
-    opacity: 0;
-    display: none;
-}
-
-.helpInactive span {
-    color: black;
-    background: rgb(252, 244, 165);
-}
-
-.helpInactive li {
-    list-style-type: square;
-    margin: 5px 0;
-}
-
-.helpInactive ul {
-    margin: 10px 0 20px;
-    padding: 0 0 0 16px;
-}
-
-.helpActive {
-    position: absolute;
-    bottom: 120px;
-    left: 60px;
-    font-weight: bolder;
-    color: #fff;
-    opacity: 1;
-}
-
-.helpActive span {
-    color: black;
-    background: rgb(252, 244, 165);
-}
-
-.helpActive li {
-    list-style-type: square;
-    margin: 5px 0;
-}
-
-.helpActive ul {
-    margin: 10px 0 20px;
-    padding: 0 0 0 16px;
-}
-
-.allCommands li {
-    list-style-position: inside;
-    list-style-type: none;
-}
-
-.allCommands span {
-    background-color: transparent;
-    color: rgb(252, 244, 165);
-}
-
-.skillOutline {
-    max-width: 300px;
-    width: 30vw;
-    min-width: 210px;
-    height: 7px;
-    margin: 35px 50px 7px 0;
-    outline: 1px solid grey;
-    outline-offset: 3px;
-    transition: margin 1s;
-}
-
-.skillBar {
-    background-color: rgb(230, 230, 230);
-    height: 100%;
-}
-
-.skillSubtext {
-    margin: 0 50px 4px;
-    color: rgb(252, 244, 165);
-    transition: margin 1s;
-}
-
-.statsContainer {
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-    gap: 20px 10px;
-    justify-content: space-evenly;
-    margin: 30px 40px 0 0;
-}
-
-.statsValue {
-    text-align: center;
-    color: rgb(252, 244, 165);
-}
-
-.workSummary {
-    width: 300px;
-    margin-right: 40px;
-}
-
-.workSummary li {
-    list-style-type: square;
-    margin-bottom: 10px;
-}
-
-.workSummary span {
-    color: rgb(252, 244, 165);
-}
-
-.contactContainer {
-    position: absolute;
-    bottom: 50px;
-    right: 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    text-align: right;
-    transition: opacity 0.5s;
-}
-
-.contactContainer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.projectSummary {
-    margin: 20px 40px 0 0;
-    width: 350px;
-}
-
-.projectSummary span {
-    color: rgb(252, 244, 165);
-}
-
 @media screen and (max-height: 900px), screen and (max-width: 800px) {
     .jmLinuxContainer {
         display: none;
@@ -335,12 +153,6 @@
 
     .helpinActive {
         display: none;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .title {
-        font-size: calc(35px + 1vw);
     }
 }
 
@@ -363,14 +175,6 @@
 }
 
 @media screen and (max-width: 400px) {
-    .title {
-        margin-left: 12vw;
-    }
-
-    .subtitle {
-        margin-left: 12vw;
-    }
-
     .nav {
         margin-left: 12vw;
     }
@@ -385,14 +189,6 @@
 
     .sectionSubtext {
         margin: 0 5px 4px;
-    }
-
-    .skillOutline {
-        margin: 35px 10px 7px 0;
-    }
-
-    .skillSubtext {
-        margin: 0 9px 4px;
     }
 }
 
@@ -412,18 +208,6 @@
     .logo {
         width: 40px;
         right: -31px;
-    }
-}
-
-@keyframes crt {
-
-    0%,
-    100% {
-        transform: translateY(-2px);
-    }
-
-    50% {
-        transform: translateY(2px);
     }
 }
 

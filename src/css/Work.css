@@ -1,0 +1,13 @@
+.workSummary {
+    width: 300px;
+    margin-right: 40px;
+}
+
+.workSummary li {
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+
+.workSummary span {
+    color: rgb(252, 244, 165);
+}

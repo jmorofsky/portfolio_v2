@@ -1,0 +1,45 @@
+.skillOutline {
+    max-width: 300px;
+    width: 30vw;
+    min-width: 210px;
+    height: 7px;
+    margin: 35px 50px 7px 0;
+    outline: 1px solid grey;
+    outline-offset: 3px;
+    transition: margin 1s;
+}
+
+.skillBar {
+    background-color: rgb(230, 230, 230);
+    height: 100%;
+}
+
+.skillSubtext {
+    margin: 0 50px 4px;
+    color: rgb(252, 244, 165);
+    transition: margin 1s;
+}
+
+.statsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 330px;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 30px 50px 0 0;
+}
+
+.statsValue {
+    text-align: center;
+    color: rgb(252, 244, 165);
+}
+
+@media screen and (max-width: 400px) {
+    .skillOutline {
+        margin: 35px 10px 7px 0;
+    }
+
+    .skillSubtext {
+        margin: 0 9px 4px;
+    }
+}

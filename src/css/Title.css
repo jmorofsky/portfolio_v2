@@ -1,0 +1,65 @@
+.title {
+    color: #fff;
+    font-size: 35px;
+    margin: 50px 0 0 60px;
+    transition: all 1s;
+}
+
+.title>* {
+    animation: crt 3s ease infinite;
+    mix-blend-mode: difference;
+}
+
+.r {
+    color: #f00;
+    left: -0.5px;
+}
+
+.g {
+    margin-top: -1em;
+    color: #0f0;
+    animation-delay: -0.5s;
+}
+
+.b {
+    margin-top: -1em;
+    color: #00f;
+    animation-delay: -0.33s;
+    left: 0.5px;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 1;
+    margin-left: 60px;
+    transition: all 1s;
+}
+
+@keyframes crt {
+
+    0%,
+    100% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .title {
+        font-size: calc(35px + 1vw);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .title {
+        margin-left: 12vw;
+    }
+
+    .subtitle {
+        margin-left: 12vw;
+    }
+}

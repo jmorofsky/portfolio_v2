@@ -1,0 +1,15 @@
+.contactContainer {
+    position: absolute;
+    bottom: 50px;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: right;
+    transition: opacity 0.5s;
+}
+
+.contactContainer a {
+    color: #fff;
+    text-decoration: none;
+}

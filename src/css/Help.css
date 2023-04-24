@@ -1,0 +1,58 @@
+.helpInactive {
+    position: absolute;
+    bottom: 120px;
+    left: 60px;
+    font-weight: bolder;
+    color: #fff;
+    opacity: 0;
+    display: none;
+}
+
+.helpInactive span {
+    color: black;
+    background: rgb(252, 244, 165);
+}
+
+.helpInactive li {
+    list-style-type: square;
+    margin: 5px 0;
+}
+
+.helpInactive ul {
+    margin: 10px 0 20px;
+    padding: 0 0 0 16px;
+}
+
+.helpActive {
+    position: absolute;
+    bottom: 120px;
+    left: 60px;
+    font-weight: bolder;
+    color: #fff;
+    opacity: 1;
+}
+
+.helpActive span {
+    color: black;
+    background: rgb(252, 244, 165);
+}
+
+.helpActive li {
+    list-style-type: square;
+    margin: 5px 0;
+}
+
+.helpActive ul {
+    margin: 10px 0 20px;
+    padding: 0 0 0 16px;
+}
+
+.allCommands li {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.allCommands span {
+    background-color: transparent;
+    color: rgb(252, 244, 165);
+}
