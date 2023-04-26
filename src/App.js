@@ -99,11 +99,11 @@ class App extends React.Component {
                   <Nav style={this.state.style} val='0' setSection={this.setSection} />
 
                   <Summary />
-                  <JML section={this.state.section} />
+                  <JML section={this.state.section} setSection={this.setSection} />
                   <About stats={this.state.stats} style={{ opacity: 0 }} />
                   <Work style={{ opacity: 0 }} />
-                  <Projects style={{ opacity: 0 }} />
-                  <Contact style={{ opacity: 0 }} />
+                  <Projects style={{ opacity: 0, pointerEvents: 'none' }} />
+                  <Contact style={{ opacity: 0, pointerEvents: 'none' }} />
                 </div>
               </div>
             </div>
@@ -125,11 +125,11 @@ class App extends React.Component {
                   <Nav style={this.state.style} val='1' setSection={this.setSection} />
 
                   <Summary style={{ opacity: 0 }} />
-                  <JML section={this.state.section} />
+                  <JML section={this.state.section} setSection={this.setSection} />
                   <About stats={this.state.stats} />
                   <Work style={{ opacity: 0 }} />
-                  <Projects style={{ opacity: 0 }} />
-                  <Contact style={{ opacity: 0 }} />
+                  <Projects style={{ opacity: 0, pointerEvents: 'none' }} />
+                  <Contact style={{ opacity: 0, pointerEvents: 'none' }} />
                 </div>
               </div>
             </div>
@@ -151,11 +151,11 @@ class App extends React.Component {
                   <Nav style={this.state.style} val='2' setSection={this.setSection} />
 
                   <Summary style={{ opacity: 0 }} />
-                  <JML section={this.state.section} />
+                  <JML section={this.state.section} setSection={this.setSection} />
                   <About stats={this.state.stats} style={{ opacity: 0 }} />
                   <Work />
-                  <Projects style={{ opacity: 0 }} />
-                  <Contact style={{ opacity: 0 }} />
+                  <Projects style={{ opacity: 0, pointerEvents: 'none' }} />
+                  <Contact style={{ opacity: 0, pointerEvents: 'none' }} />
                 </div>
               </div>
             </div>
@@ -177,11 +177,11 @@ class App extends React.Component {
                   <Nav style={this.state.style} val='3' setSection={this.setSection} />
 
                   <Summary style={{ opacity: 0 }} />
-                  <JML section={this.state.section} />
+                  <JML section={this.state.section} setSection={this.setSection} />
                   <About stats={this.state.stats} style={{ opacity: 0 }} />
                   <Work style={{ opacity: 0 }} />
                   <Projects />
-                  <Contact style={{ opacity: 0 }} />
+                  <Contact style={{ opacity: 0, pointerEvents: 'none' }} />
                 </div>
               </div>
             </div>
@@ -203,10 +203,10 @@ class App extends React.Component {
                   <Nav style={this.state.style} val='4' setSection={this.setSection} />
 
                   <Summary style={{ opacity: 0 }} />
-                  <JML section={this.state.section} />
+                  <JML section={this.state.section} setSection={this.setSection} />
                   <About stats={this.state.stats} style={{ opacity: 0 }} />
                   <Work style={{ opacity: 0 }} />
-                  <Projects style={{ opacity: 0 }} />
+                  <Projects style={{ opacity: 0, pointerEvents: 'none' }} />
                   <Contact />
                 </div>
               </div>
@@ -229,7 +229,7 @@ class App extends React.Component {
                   <Nav style={this.state.style} val='0' setSection={this.setSection} />
 
                   <Summary style={{ opacity: 0 }} />
-                  <JML section={this.state.section} />
+                  <JML section={this.state.section} setSection={this.setSection} />
                   <About stats={this.state.stats} style={{ opacity: 0 }} />
                   <Work style={{ opacity: 0 }} />
                   <Projects style={{ opacity: 0 }} />
