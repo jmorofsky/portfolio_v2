@@ -47,6 +47,61 @@ class JML extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps.section !== this.props.section) {
+            let directories = this.state.directories
+            switch (this.props.section) {
+                case 2:
+                    directories.forEach((element) => {
+                        if (element.name === 'home') {
+                            element.active = true
+                        } else {
+                            element.active = false
+                        }
+                    })
+                    break
+                case 3:
+                    directories.forEach((element) => {
+                        if (element.name === 'about') {
+                            element.active = true
+                        } else {
+                            element.active = false
+                        }
+                    })
+                    break
+                case 4:
+                    directories.forEach((element) => {
+                        if (element.name === 'work') {
+                            element.active = true
+                        } else {
+                            element.active = false
+                        }
+                    })
+                    break
+                case 5:
+                    directories.forEach((element) => {
+                        if (element.name === 'projects') {
+                            element.active = true
+                        } else {
+                            element.active = false
+                        }
+                    })
+                    break
+                case 6:
+                    directories.forEach((element) => {
+                        if (element.name === 'contact') {
+                            element.active = true
+                        } else {
+                            element.active = false
+                        }
+                    })
+                    break
+                default:
+            }
+            this.setState({ directories: directories })
+        }
+    }
+
     handleSubmit(e) {
         e.preventDefault()
 
@@ -75,7 +130,6 @@ class JML extends React.Component {
                 if (element.active === true) {
                     let subs = element.subdirectories
                     if (subs.length !== 0) {
-                        // todo: implement file color
                         this.setState({ output1: temp, output2: subs.join('  ') })
                     } else {
                         this.setState({ output1: temp, output2: 'directory is empty' })
@@ -238,7 +292,7 @@ class JML extends React.Component {
                 }
             }
         })
-        
+
         return (
             <div>
                 <Help help={this.state.help} />
@@ -268,5 +322,3 @@ class JML extends React.Component {
 }
 
 export default JML
-
-// make files different color in ls

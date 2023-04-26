@@ -247,6 +247,5 @@ export default App
 
 /*
   distortion / glitch animation
-  finish jmsh commands
   add responsiveness
 */
