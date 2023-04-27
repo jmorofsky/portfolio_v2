@@ -7,6 +7,12 @@
     color: rgb(252, 244, 165);
 }
 
+@media screen and (max-width: 800px) {
+    .projectSummary {
+        width: 300px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .projectSummary {
         width: 83vw;

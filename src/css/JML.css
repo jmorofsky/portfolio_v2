@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-height: 895px),
-screen and (max-width: 500px) {
+screen and (max-width: 965px) {
     .jmLinuxContainer {
         display: none;
     }
