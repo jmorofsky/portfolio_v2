@@ -115,7 +115,7 @@ class App extends React.Component {
           <div className='background'>
             <div className='outline'>
               <img src={logo} className='logo' onClick={() => this.setSection(2)} alt='' />
-              <div className='overflow' style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
+              <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
                 <div style={{ animation: 'fadeIn 1s forwards' }}>
                   <Stars />
                   <div className='extraStars' >
