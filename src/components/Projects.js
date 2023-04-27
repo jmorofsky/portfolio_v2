@@ -7,8 +7,8 @@ function Projects(props) {
             <div className='sectionTitle' style={{ width: '157px' }}>My Portfolio</div>
 
             <div className='sectionText'>jasonmorofsky.com v2</div>
-            <div className='sectionSubtext'>https://jasonmorofsky.com</div>
-            <div className='sectionSubtext'>
+            <div className='sectionSubtext' id='projects'>https://jasonmorofsky.com</div>
+            <div className='sectionSubtext' id='projects'>
                 <a href='https://docs.github.com/en/rest?apiVersion=2022-11-28' target="_blank" rel="noreferrer">
                     https://docs.github.com/en/rest ↗
                 </a>
@@ -21,12 +21,12 @@ function Projects(props) {
             </div>
 
             <div className='sectionText'>Hangman</div>
-            <div className='sectionSubtext'>
+            <div className='sectionSubtext' id='projects'>
                 <a href='https://github.com/jmorofsky/hangman' target="_blank" rel="noreferrer">
                     https://github.com/jmorofsky/hangman ↗
                 </a>
             </div>
-            <div className='sectionSubtext'>
+            <div className='sectionSubtext' id='projects'>
                 <a href='https://random-word-api.herokuapp.com' target="_blank" rel="noreferrer">
                     https://random-word-api.herokuapp.com ↗
                 </a>
@@ -39,7 +39,7 @@ function Projects(props) {
             </div>
 
             <div className='sectionText'>Calculator</div>
-            <div className='sectionSubtext'>
+            <div className='sectionSubtext' id='projects'>
                 <a href='https://github.com/jmorofsky/calculator' target="_blank" rel="noreferrer">
                     https://github.com/jmorofsky/calculator ↗
                 </a>
@@ -50,7 +50,7 @@ function Projects(props) {
             </div>
 
             <div className='sectionText'>Medicare with Meghan Morofsky</div>
-            <div className='sectionSubtext'>
+            <div className='sectionSubtext' id='projects'>
                 <a href='https://meghanexplainsmedicare.com' target="_blank" rel="noreferrer">
                     https://meghanexplainsmedicare.com ↗
                 </a>
@@ -63,7 +63,7 @@ function Projects(props) {
             </div>
 
             <div className='sectionText'>jasonmorofsky.com v1</div>
-            <div className='sectionSubtext'>
+            <div className='sectionSubtext' id='projects'>
                 <a href='https://github.com/jmorofsky/my-portfolio' target="_blank" rel="noreferrer">
                     https://github.com/jmorofsky/my-portfolio ↗
                 </a>
@@ -72,6 +72,8 @@ function Projects(props) {
             <div className='projectSummary'>My original <span>portfolio.</span> It is the first web project
                 I ever created, and how I learned to design, build, and publish a website.
             </div>
+
+            <div style={{ height: '10px', width: '100%' }} >&nbsp;</div>
         </div>
     )
 }

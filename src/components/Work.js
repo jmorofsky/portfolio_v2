@@ -39,6 +39,8 @@ function Work(props) {
             <div className='sectionText'>A+</div>
             <div className='sectionSubtext'>CompTIA</div>
             <div className='sectionSubtext'><strong>Expected summer 2023</strong></div>
+
+            <div style={{ height: '10px', width: '100%' }} >&nbsp;</div>
         </div>
     )
 }

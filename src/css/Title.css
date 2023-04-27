@@ -54,12 +54,14 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .title {
-        margin-left: 12vw;
+        width: 7em;
+        margin: 20px auto 0;
     }
 
     .subtitle {
-        margin-left: 12vw;
+        margin: auto;
+        width: 12em;
     }
 }

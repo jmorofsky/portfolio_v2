@@ -11,3 +11,10 @@
 .workSummary span {
     color: rgb(252, 244, 165);
 }
+
+@media screen and (max-width: 450px) {
+    .workSummary {
+        width: 80vw;
+        margin-right: 10px;
+    }
+}

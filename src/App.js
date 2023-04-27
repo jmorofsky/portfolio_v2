@@ -100,8 +100,8 @@ class App extends React.Component {
 
                   <Summary />
                   <JML section={this.state.section} setSection={this.setSection} />
-                  <About stats={this.state.stats} style={{ opacity: 0 }} />
-                  <Work style={{ opacity: 0 }} />
+                  <About stats={this.state.stats} style={{ opacity: 0, pointerEvents: 'none' }} />
+                  <Work style={{ opacity: 0, pointerEvents: 'none' }} />
                   <Projects style={{ opacity: 0, pointerEvents: 'none' }} />
                   <Contact style={{ opacity: 0, pointerEvents: 'none' }} />
                 </div>
@@ -115,7 +115,7 @@ class App extends React.Component {
           <div className='background'>
             <div className='outline'>
               <img src={logo} className='logo' onClick={() => this.setSection(2)} alt='' />
-              <div style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
+              <div className='overflow' style={{ overflow: 'hidden', width: '100%', height: '100%' }}>
                 <div style={{ animation: 'fadeIn 1s forwards' }}>
                   <Stars />
                   <div className='extraStars' >
@@ -124,10 +124,10 @@ class App extends React.Component {
                   <Title />
                   <Nav style={this.state.style} val='1' setSection={this.setSection} />
 
-                  <Summary style={{ opacity: 0 }} />
+                  <Summary style={{ opacity: 0, pointerEvents: 'none' }} />
                   <JML section={this.state.section} setSection={this.setSection} />
                   <About stats={this.state.stats} />
-                  <Work style={{ opacity: 0 }} />
+                  <Work style={{ opacity: 0, pointerEvents: 'none' }} />
                   <Projects style={{ opacity: 0, pointerEvents: 'none' }} />
                   <Contact style={{ opacity: 0, pointerEvents: 'none' }} />
                 </div>
@@ -150,9 +150,9 @@ class App extends React.Component {
                   <Title />
                   <Nav style={this.state.style} val='2' setSection={this.setSection} />
 
-                  <Summary style={{ opacity: 0 }} />
+                  <Summary style={{ opacity: 0, pointerEvents: 'none' }} />
                   <JML section={this.state.section} setSection={this.setSection} />
-                  <About stats={this.state.stats} style={{ opacity: 0 }} />
+                  <About stats={this.state.stats} style={{ opacity: 0, pointerEvents: 'none' }} />
                   <Work />
                   <Projects style={{ opacity: 0, pointerEvents: 'none' }} />
                   <Contact style={{ opacity: 0, pointerEvents: 'none' }} />
@@ -176,10 +176,10 @@ class App extends React.Component {
                   <Title />
                   <Nav style={this.state.style} val='3' setSection={this.setSection} />
 
-                  <Summary style={{ opacity: 0 }} />
+                  <Summary style={{ opacity: 0, pointerEvents: 'none' }} />
                   <JML section={this.state.section} setSection={this.setSection} />
-                  <About stats={this.state.stats} style={{ opacity: 0 }} />
-                  <Work style={{ opacity: 0 }} />
+                  <About stats={this.state.stats} style={{ opacity: 0, pointerEvents: 'none' }} />
+                  <Work style={{ opacity: 0, pointerEvents: 'none' }} />
                   <Projects />
                   <Contact style={{ opacity: 0, pointerEvents: 'none' }} />
                 </div>
@@ -202,10 +202,10 @@ class App extends React.Component {
                   <Title />
                   <Nav style={this.state.style} val='4' setSection={this.setSection} />
 
-                  <Summary style={{ opacity: 0 }} />
+                  <Summary style={{ opacity: 0, pointerEvents: 'none' }} />
                   <JML section={this.state.section} setSection={this.setSection} />
-                  <About stats={this.state.stats} style={{ opacity: 0 }} />
-                  <Work style={{ opacity: 0 }} />
+                  <About stats={this.state.stats} style={{ opacity: 0, pointerEvents: 'none' }} />
+                  <Work style={{ opacity: 0, pointerEvents: 'none' }} />
                   <Projects style={{ opacity: 0, pointerEvents: 'none' }} />
                   <Contact />
                 </div>
@@ -228,12 +228,12 @@ class App extends React.Component {
                   <Title />
                   <Nav style={this.state.style} val='0' setSection={this.setSection} />
 
-                  <Summary style={{ opacity: 0 }} />
+                  <Summary style={{ opacity: 0, pointerEvents: 'none' }} />
                   <JML section={this.state.section} setSection={this.setSection} />
-                  <About stats={this.state.stats} style={{ opacity: 0 }} />
-                  <Work style={{ opacity: 0 }} />
-                  <Projects style={{ opacity: 0 }} />
-                  <Contact style={{ opacity: 0 }} />
+                  <About stats={this.state.stats} style={{ opacity: 0, pointerEvents: 'none' }} />
+                  <Work style={{ opacity: 0, pointerEvents: 'none' }} />
+                  <Projects style={{ opacity: 0, pointerEvents: 'none' }} />
+                  <Contact style={{ opacity: 0, pointerEvents: 'none' }} />
                 </div>
               </div>
             </div>
@@ -244,8 +244,3 @@ class App extends React.Component {
 }
 
 export default App
-
-/*
-  distortion / glitch animation
-  add responsiveness
-*/

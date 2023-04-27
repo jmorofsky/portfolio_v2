@@ -13,3 +13,10 @@
     color: #fff;
     text-decoration: none;
 }
+
+@media screen and (max-width: 450px) {
+    .contactContainer {
+        bottom: 20px;
+        right: 20px;
+    }
+}

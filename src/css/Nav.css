@@ -35,3 +35,27 @@
     margin-right: 10px;
     transition: opacity 0.5s;
 }
+
+@media screen and (max-width: 450px) {
+        .nav {
+            flex-direction: row;
+            margin: 20px auto;
+            width: 100%;
+            gap: 5px;
+            justify-content: center;
+            margin-left: -8px;
+        }
+
+        .navItem {
+            margin: 0;
+        }
+
+        .navItemActive {
+            margin: 0;
+        }
+
+        .selector {
+            margin-left: 7px;
+            margin-right: 5px;
+        }
+}

@@ -6,3 +6,16 @@
 .projectSummary span {
     color: rgb(252, 244, 165);
 }
+
+@media screen and (max-width: 450px) {
+    .projectSummary {
+        width: 83vw;
+        margin-right: 10px;
+    }
+
+    #projects {
+        width: 100%;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+}

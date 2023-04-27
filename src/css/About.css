@@ -3,6 +3,7 @@
     width: 30vw;
     min-width: 210px;
     height: 7px;
+    min-height: 7px;
     margin: 35px 50px 7px 0;
     outline: 1px solid grey;
     outline-offset: 3px;
@@ -34,12 +35,50 @@
     color: rgb(252, 244, 165);
 }
 
-@media screen and (max-width: 400px) {
+.statsSubtext {
+    width: 330px;
+    margin: 15px 50px 0 0;
+    font-weight: 1;
+}
+
+@media screen and (max-width: 800px) {
     .skillOutline {
         margin: 35px 10px 7px 0;
     }
 
     .skillSubtext {
         margin: 0 9px 4px;
+    }
+
+    .statsContainer {
+        margin-right: 10px;
+    }
+
+    .statsSubtext {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .skillOutline {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .statsContainer {
+        width: 85vw;
+        gap: 20px 10px;
+    }
+
+    .statsSubtext {
+        width: 85vw;
+        text-align: right;
+    }
+}
+
+@media screen and (min-height: 900px) {
+    #about {
+        justify-content: center;
     }
 }

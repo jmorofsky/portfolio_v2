@@ -7,3 +7,18 @@
     right: 50px;
     transition: opacity 0.5s;
 }
+
+@media screen and (max-width: 895px) and (max-height: 1050px) {
+    .summary {
+        bottom: 25px;
+        right: 25px;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .summary {
+        bottom: 15px;
+        right: 15px;
+        width: 88%;
+    }
+}
