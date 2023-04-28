@@ -56,12 +56,14 @@
 
 @media screen and (max-width: 450px) {
     .title {
-        width: 7em;
+        width: 8em;
         margin: 20px auto 0;
+        text-align: center;
     }
 
     .subtitle {
         margin: auto;
-        width: 12em;
+        width: 210px;
+        text-align: center;
     }
 }

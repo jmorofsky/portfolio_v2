@@ -93,7 +93,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 860px) {
     .sectionText {
         font-size: 20px;
     }
@@ -172,18 +172,25 @@
     }
 }
 
-@media screen and (max-height: 890px) and (max-width: 450px) {
+@media screen and (max-height: 890px), (max-width: 775px) {
     .sectionContainer {
         overflow-y: scroll !important;
         -ms-overflow-style: none;
         scrollbar-width: none;
-        height: calc(100vh - 190px);
-        top: 140px;
+        height: 85%;
+        top: 170px;
         justify-content: unset;
     }
 
     .sectionContainer::-webkit-scrollbar {
         display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .sectionContainer {
+        top: 150px;
+        height: 87%;
     }
 }
 
