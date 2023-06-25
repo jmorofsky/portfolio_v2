@@ -17,7 +17,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      section: 1,
+      section: 0,
       style: ['navItem', 'navItem', 'navItem', 'navItem'],
       stats: []
     }
@@ -65,7 +65,7 @@ class App extends React.Component {
   render() {
     switch (this.state.section) {
       case 0:
-        setTimeout(() => { this.setSection(1) }, 12000)
+        setTimeout(() => { this.setSection(1) }, 7500)
         return (
           <div className='background'>
             <div className='outline'>

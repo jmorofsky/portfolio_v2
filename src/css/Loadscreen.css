@@ -20,7 +20,7 @@
     background-color: rgb(230, 230, 230);
     width: 0;
     height: 100%;
-    animation: load 9s ease-in-out forwards;
+    animation: load 4.5s ease-in-out forwards;
 }
 
 .loadText {

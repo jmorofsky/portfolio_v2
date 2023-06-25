@@ -58,12 +58,17 @@ def fetchstats(event, context):
      stats.append(stat(4, 'KB of Code in Repos', size))
 
      # fetch number of languages in repos
-     langs = 0
+     langs = 1
+     usedLangs = []
      for x in range(0, len(repos)):
           url = repos[x]['languages_url']
           langresponse = requests.get(url, headers={'authorization': key})
           langresult = langresponse.json()
-          langs += len(list(langresult.keys()))
+          
+          usedLangs.append(langresult.keys())
+          for x in range(0, len(usedLangs)):
+               if usedLangs.count(usedLangs[x]) == 1:
+                    langs += 1
      stats.append(stat(5, 'Languages used in Repos', langs))
 
      stats.append(stat(6, 'Programming Languages', 10))
@@ -129,4 +134,3 @@ def fetchstats(event, context):
      upload_blob('jasonmorofsky', '/tmp/stats.csv', 'statsData.json')
      os.remove('/tmp/stats.csv')
      print('finished')
-     

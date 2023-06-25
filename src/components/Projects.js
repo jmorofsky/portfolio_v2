@@ -33,7 +33,7 @@ function Projects(props) {
             </div>
             <div className='sectionSubtext'><strong>February 2023</strong></div>
             <div className='projectSummary'>The classic hangman game. A <span>web application</span>
-                &nbsp;created using React. Utilizes a random word api. Words generated can be any in the
+                &nbsp;created using React. Utilizes a random word API. Words generated can be any in the
                 English language, so they can sometimes be pretty obscure! This hangman game is a
                 challenge.
             </div>

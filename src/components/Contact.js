@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/Contact.css'
-import Resume from '../Resume.pdf'
 
 function Contact(props) {
     return (
@@ -12,8 +11,7 @@ function Contact(props) {
             <div><strong><a href='mailto:contact@jasonmorofsky.com' title='Email me' target="_blank" rel="noreferrer">
                 contact@jasonmorofsky.com ↗</a></strong></div>
             <div><strong>
-                <a href={Resume} download='jason_morofsky_resume' title='Download me'>
-                    Resume ↓</a></strong></div>
+                <a href='https://storage.googleapis.com/jasonmorofsky/Resume.pdf' target="_blank" rel="noreferrer">Resume ↗</a></strong></div>
         </div>
     )
 }
