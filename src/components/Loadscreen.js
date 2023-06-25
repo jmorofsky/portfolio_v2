@@ -41,7 +41,7 @@ class Loadscreen extends React.Component {
         if (text === "done!") {
             return (
                 <div className='loadContainer'>
-                    <img src={loadGif} className='loadGifStatic' />
+                    <img src={loadGif} className='loadGifStatic' alt='' />
                     <div className='loadOutlineStatic' >
                         <div className='loadBar' />
                     </div>
@@ -58,7 +58,7 @@ class Loadscreen extends React.Component {
 
         return (
             <div className='loadContainer'>
-                <img src={loadGif} className='loadGif' />
+                <img src={loadGif} className='loadGif' alt='' />
                 <div className='loadOutline' >
                     <div className='loadBar' />
                 </div>
