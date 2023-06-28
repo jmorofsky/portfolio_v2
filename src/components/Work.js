@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import '../css/Work.css'
 
 function Work(props) {
@@ -36,10 +36,15 @@ function Work(props) {
             <div className='sectionTitle' style={{ marginTop: '50px', width: '175px' }}>
                 Certifications
             </div>
-            <div className='sectionText'>A+</div>
-            <div className='sectionSubtext'>CompTIA</div>
-            <div className='sectionSubtext'><strong>Expected summer 2023</strong></div>
-
+            <div className='sectionText'>CompTIA A+</div>
+            <a
+                className='sectionSubtext'
+                href='https://drive.google.com/file/d/14gXlEM-R71Q-qzi-ZTi-k_GkOap-5skG/view?usp=sharing'
+                target="_blank"
+                rel="noreferrer">
+                    Verification ↗
+            </a>
+            <div className='sectionSubtext'><strong>June 2023</strong></div>
             <div style={{ height: '10px', width: '100%' }} >&nbsp;</div>
         </div>
     )
