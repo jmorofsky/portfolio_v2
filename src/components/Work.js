@@ -9,28 +9,23 @@ function Work(props) {
             <div className='sectionSubtext'>Quality Assurance Engineer</div>
             <div className='sectionSubtext'><strong>September 2021 - August 2022</strong></div>
             <ul className='workSummary'>
-                <li>Created detailed, comprehensive, and well-structured <span>test cases.</span></li>
-                <li>Collaborated with offshore <span>development team</span> to ensure a quality release
-                    each sprint.</li>
-                <li>Utilizing Postman, developed <span>automated</span> API test cases.</li>
-                <li>Tested changes on development, staging, and production <span>environments.</span>
-                </li>
-                <li>Actively participated in daily stand-up <span>meetings,</span> project planning,
-                    sprint planning, grooming sessions, and retrospectives.</li>
-                <li>Worked with <span>databases</span> such as MongoDB and Google BigQuery.</li>
+                <li>Collaborated directly alongside offshore development team,
+                    ensuring a <span>standard of quality</span> and polish in the product.</li>
+                <li>Created a suite of automatic tests using Postman which <span>provided
+                    instant feedback</span> and bug reporting after each deployment.</li>
+                <li>Engaged in weekly bug hunts which helped to actively <span>seek out
+                    potential issues</span> and fix them before they became problems.</li>
             </ul>
 
             <div className='sectionText'>Ideagen</div>
             <div className='sectionSubtext'>Quality Assurance Engineer</div>
-            <div className='sectionSubtext'><strong>September 2022 - January 2023</strong></div>
+            <div className='sectionSubtext'><strong>September 2022 - March 2023</strong></div>
             <ul className='workSummary'>
-                <li><span>Analyzed</span> the existing test infrastructure.</li>
-                <li>Worked with developers to <span>fix</span> existing nonfunctional tests and adjust
-                    their scope where necessary.</li>
-                <li>Created <span>document</span> detailing test status and coverage for the entire
+                <li>Established a new test infrastructure based on old, broken tests
+                    and new ones I wrote, <span>providing coverage</span> to all aspects of the
                     product.</li>
-                <li>Developed a <span>plan</span> to implement new tests for areas of the product still
-                    needing coverage.</li>
+                <li>Implemented testing tasks into the preexisting workflow,
+                    ensuring <span>quality is a priority</span> moving forwards</li>
             </ul>
 
             <div className='sectionTitle' style={{ marginTop: '50px', width: '175px' }}>

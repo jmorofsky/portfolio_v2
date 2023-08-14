@@ -11,7 +11,7 @@ function Contact(props) {
             <div><strong><a href='mailto:contact@jasonmorofsky.com' title='Email me' target="_blank" rel="noreferrer">
                 contact@jasonmorofsky.com ↗</a></strong></div>
             <div><strong>
-                <a href='https://storage.googleapis.com/jasonmorofsky/Resume.pdf' target="_blank" rel="noreferrer">Resume ↗</a></strong></div>
+                <a href="https://storage.googleapis.com/jasonmorofsky/JasonMorofsky'sResume.pdf" target="_blank" rel="noreferrer">Resume ↗</a></strong></div>
         </div>
     )
 }
