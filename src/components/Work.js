@@ -25,7 +25,7 @@ function Work(props) {
                     and new ones I wrote, <span>providing coverage</span> to all aspects of the
                     product.</li>
                 <li>Implemented testing tasks into the preexisting workflow,
-                    ensuring <span>quality is a priority</span> moving forwards</li>
+                    ensuring <span>quality is a priority</span> moving forwards.</li>
             </ul>
 
             <div className='sectionTitle' style={{ marginTop: '50px', width: '175px' }}>
