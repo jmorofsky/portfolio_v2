@@ -41,6 +41,27 @@
     font-weight: 1;
 }
 
+.educationSummary {
+    width: 300px;
+    margin-right: 40px;
+}
+
+.educationSummary li {
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+
+.educationSummary span {
+    color: rgb(252, 244, 165);
+}
+
+@media screen and (max-width: 450px) {
+    .educationSummary {
+        width: 80vw;
+        margin-right: 10px;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .skillOutline {
         margin: 35px 10px 7px 0;

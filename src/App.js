@@ -244,5 +244,3 @@ class App extends React.Component {
 }
 
 export default App
-// fix responsiveness
-// fix resume download
