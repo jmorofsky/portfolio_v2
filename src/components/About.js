@@ -8,7 +8,7 @@ class About extends React.Component {
                 <div className='overflow-container'>
                     <div className='sectionTitle'>Education History</div>
                     <div className='sectionText'>Florida Polytechnic University</div>
-                    <div className='sectionSubtext'>Bachelor of Science, Computer Science</div>
+                    <div className='sectionSubtext' id='nowrap'>Bachelor of Science, Computer Science</div>
                     <div className='sectionSubtext'><strong>2021</strong></div>
                     <ul className='educationSummary'>
                         <li>
@@ -55,22 +55,28 @@ class About extends React.Component {
                     <div className='statsContainer'>
                         <div>
                             <div className='statsValue'>{this.props.stats[0].value}</div>
-                            Projects</div>
+                            Projects
+                        </div>
                         <div>
                             <div className='statsValue'>{this.props.stats[5].value}</div>
-                            Languages Used</div>
+                            Languages Used
+                        </div>
                         <div>
                             <div className='statsValue'>{this.props.stats[1].value}</div>
-                            Commits</div>
+                            Commits
+                        </div>
                         <div>
                             <div className='statsValue'>{this.props.stats[2].value}</div>
-                            Deletions</div>
+                            Deletions
+                        </div>
                         <div>
                             <div className='statsValue'>{this.props.stats[3].value}</div>
-                            Additions</div>
+                            Additions
+                        </div>
                         <div>
                             <div className='statsValue'>{this.props.stats[4].value}</div>
-                            KB of Code</div>
+                            KB of Code
+                        </div>
                     </div>
                     <div className='statsSubtext'>These stats are
                         updated automatically every day. Last update:&nbsp;{this.props.stats[8].value}.

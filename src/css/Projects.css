@@ -7,6 +7,10 @@
     color: rgb(252, 244, 165);
 }
 
+#projects a {
+    white-space: nowrap;
+}
+
 @media screen and (max-width: 800px) {
     .projectSummary {
         width: 300px;
@@ -20,8 +24,8 @@
     }
 
     #projects {
-        width: 100%;
-        margin-right: 10px;
+        /* width: 100%; */
+        /* margin-right: 10px; */
         font-size: 13px;
     }
 }

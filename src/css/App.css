@@ -142,6 +142,16 @@
         width: 40px;
         right: -31px;
     }
+
+    .sectionContainer {
+        top: 150px;
+        height: calc(100% - 160px);
+    }
+
+    .scroll-arrow {
+        font-size: 20px;
+        right: 3.5px;
+    }
 }
 
 @media screen and (max-width: 390px) {
@@ -167,13 +177,6 @@
 @media screen and (max-height: 1150px) {
     .sectionTitle {
         margin-top: 2vh !important;
-    }
-}
-
-@media screen and (max-width:450px) {
-    .sectionContainer {
-        top: 150px;
-        height: calc(100% - 160px);
     }
 }
 
