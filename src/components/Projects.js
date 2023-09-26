@@ -135,6 +135,8 @@ function Projects(props) {
 
                 <div style={{ height: '10px', width: '100%' }} >&nbsp;</div>
             </div>
+
+            <div className='scroll-arrow'>⇣</div>
         </div >
     )
 }

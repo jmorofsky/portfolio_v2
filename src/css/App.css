@@ -95,6 +95,16 @@
     margin: 0 50px 4px;
 }
 
+.scroll-arrow {
+    position: absolute;
+    bottom: 4px;
+    right: 10px;
+    font-size: 30px;
+    color: rgb(252, 244, 165);
+    animation: bounce 2.5s ease-out infinite forwards;
+    animation-delay: 2s;
+}
+
 @media screen and (min-width: 2000px) {
     .extraStars {
         opacity: 1;
@@ -165,6 +175,23 @@
         top: 150px;
         height: calc(100% - 160px);
     }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(-10px);
+    }
+
+    20% {
+        transform: translateY(0);
+    }  
+    100% {
+        transform: translateY(0);
+    }  
 }
 
 @keyframes fadeIn {

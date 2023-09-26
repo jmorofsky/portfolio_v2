@@ -62,24 +62,6 @@
     }
 }
 
-@media screen and (max-width: 800px) {
-    .skillOutline {
-        margin: 35px 10px 7px 0;
-    }
-
-    .skillSubtext {
-        margin: 0 9px 4px;
-    }
-
-    .statsContainer {
-        margin-right: 10px;
-    }
-
-    .statsSubtext {
-        margin-right: 5px;
-    }
-}
-
 @media screen and (max-height: 900px) {
     .skillOutline {
         margin-top: 15px;

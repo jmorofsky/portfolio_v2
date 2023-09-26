@@ -17,7 +17,7 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      section: 0,
+      section: 1,
       style: ['navItem', 'navItem', 'navItem', 'navItem'],
       stats: []
     }
