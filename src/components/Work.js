@@ -29,7 +29,7 @@ function Work(props) {
                     </li>
                     <li style={{ listStyleType: "none" }}>
                         I <span>tested</span> new features being added to the web app, frontend usability,
-                        responsiveness, and design, integrity of data on both the front and back ends, and
+                        responsiveness, design, integrity of data on both the front and back ends, and
                         multiple API endpoints to ensure functionality in all scenarios.
                     </li>
                 </ul>

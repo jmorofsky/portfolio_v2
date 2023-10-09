@@ -117,7 +117,7 @@ function Projects(props) {
                 <div className='projectSummary'>
                     The styling needed to be clean and professional. Since most of the people looking into
                     Medicare are older, the site also needed to
-                    <span> accommodate an older audience's needs.</span> This meant making text large and
+                    <span> accommodate an older audience's needs.</span> This meant making text large,
                     clearly legible, and with high contrast. The overall layout of the site was kept simple
                     and minimalistic to help achieve this goal.
                 </div>
