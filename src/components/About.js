@@ -29,27 +29,27 @@ class About extends React.Component {
                     <div className='skillOutline' style={{ marginTop: '35px' }}>
                         <div className='skillBar' style={{ width: '90%' }} />
                     </div>
-                    <div className='skillSubtext'>Frontend</div>
+                    <div className='skillSubtext'>Quality Assurance</div>
                     <div className='skillOutline'>
                         <div className='skillBar' style={{ width: '90%' }} />
                     </div>
-                    <div className='skillSubtext'>React</div>
+                    <div className='skillSubtext'>Test Case Creation</div>
                     <div className='skillOutline'>
                         <div className='skillBar' style={{ width: '80%' }} />
                     </div>
-                    <div className='skillSubtext'>Agile Development</div>
+                    <div className='skillSubtext'>Agile Methodology</div>
                     <div className='skillOutline'>
                         <div className='skillBar' style={{ width: '80%' }} />
                     </div>
-                    <div className='skillSubtext'>Information Technology</div>
+                    <div className='skillSubtext'>Requirements Analysis</div>
                     <div className='skillOutline'>
                         <div className='skillBar' style={{ width: '70%' }} />
                     </div>
-                    <div className='skillSubtext'>Quality Assurance</div>
+                    <div className='skillSubtext'>Automation</div>
                     <div className='skillOutline'>
                         <div className='skillBar' style={{ width: '60%' }} />
                     </div>
-                    <div className='skillSubtext'>Backend</div>
+                    <div className='skillSubtext'>Frontend Development</div>
 
                     <div className='sectionTitle' style={{ marginTop: '100px' }}>Some GitHub Stats</div>
                     <div className='statsContainer'>
