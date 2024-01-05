@@ -142,7 +142,7 @@ class JML extends React.Component {
             let set2 = 0
 
             // if cd
-            if (sub === '') {
+            if (sub === '..') {
                 // find current directory
                 directories.forEach((element) => {
                     if (element.active === true) {
@@ -178,7 +178,6 @@ class JML extends React.Component {
                     }
                     set2 = 1
                 })
-            } else if (sub.includes('.')) {
             } else {
                 directories.forEach((element) => {
                     if (element.active === true) {
