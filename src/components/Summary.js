@@ -9,5 +9,5 @@ function Summary(props) {
         </div>
     )
 }
-
+// youre gay
 export default Summary
