@@ -6,6 +6,27 @@ function Work(props) {
         <div className='sectionContainer' style={props.style}>
             <div className='overflow-container'>
                 <div className='sectionTitle' style={{ width: '255px' }}>Professional Experience</div>
+
+                <div className='sectionText'>Ideagen</div>
+                <div className='sectionSubtext'>Quality Assurance Engineer</div>
+                <div className='sectionSubtext'><strong>September 2022 - March 2023</strong></div>
+                <ul className='workSummary'>
+                    <li>Established a new test infrastructure by updating 2-3 outdated tests and writing
+                        2-3 new ones each week, <span>providing coverage</span> to all aspects of the
+                        product.
+                    </li>
+                    <li>Implemented testing tasks into the preexisting workflow,
+                        ensuring <span>quality is a priority</span> moving forwards.
+                    </li>
+
+                    <li style={{ listStyleType: "none" }}><br />
+                        In this position, I helped test the <span>frontend usability</span> of a Windows-based
+                        application. I ensured all components were performing their expected behavior, and
+                        that their design was adequate both to perform their intended function as well as fit
+                        in seamlessly with the rest of the application.
+                    </li>
+                </ul>
+
                 <div className='sectionText'>Airfind</div>
                 <div className='sectionSubtext'>Quality Assurance Engineer</div>
                 <div className='sectionSubtext'><strong>September 2021 - August 2022</strong></div>
@@ -34,29 +55,24 @@ function Work(props) {
                     </li>
                 </ul>
 
-                <div className='sectionText'>Ideagen</div>
-                <div className='sectionSubtext'>Quality Assurance Engineer</div>
-                <div className='sectionSubtext'><strong>September 2022 - March 2023</strong></div>
-                <ul className='workSummary'>
-                    <li>Established a new test infrastructure by updating 2-3 outdated tests and writing
-                        2-3 new ones each week, <span>providing coverage</span> to all aspects of the
-                        product.
-                    </li>
-                    <li>Implemented testing tasks into the preexisting workflow,
-                        ensuring <span>quality is a priority</span> moving forwards.
-                    </li>
-
-                    <li style={{ listStyleType: "none" }}><br />
-                        In this position, I helped test the <span>frontend usability</span> of a Windows-based
-                        application. I ensured all components were performing their expected behavior, and
-                        that their design was adequate both to perform their intended function as well as fit
-                        in seamlessly with the rest of the application.
-                    </li>
-                </ul>
-
                 <div className='sectionTitle' style={{ marginTop: '50px', width: '175px' }}>
                     Certifications
                 </div>
+                <div className='sectionText'>ISC2 CC</div>
+                <a
+                    className='sectionSubtext'
+                    href='https://drive.google.com/file/d/1jfmA-c6MTHO63ZFA4x5JojRKjbtaiH3y/view?usp=sharing'
+                    target="_blank"
+                    rel="noreferrer">
+                    Verification ↗
+                </a>
+                <div className='sectionSubtext'><strong>March 2024</strong></div>
+                <ul className='workSummary'>
+                    <li style={{ listStyleType: 'none' }}>Proves you have the <span>foundational knowledge,
+                        skills, and abilities</span> for an entry- or junior-level cybersecurity role.
+                    </li>
+                </ul>
+
                 <div className='sectionText'>CompTIA A+</div>
                 <a
                     className='sectionSubtext'
