@@ -116,7 +116,7 @@ function Work(props) {
                 <div className='sectionSubtext'><strong>April 2021</strong></div>
                 <ul className='workSummary'>
                     <li style={{ listStyleType: 'none' }}>Proves understanding of the <span>basics of agile 
-                    methodologies</span> (scrum and and kanban), how to apply agile practices in Jira, 
+                    methodologies</span> (scrum and kanban), how to apply agile practices in Jira, 
                     and how to create and manage agile boards in Jira.
                     </li>
                 </ul>
