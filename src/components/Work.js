@@ -88,6 +88,38 @@ function Work(props) {
                         troubleshoot problems on a wide range of devices.
                     </li>
                 </ul>
+
+                <div className='sectionText'>Postman: The Complete Guide</div>
+                <a
+                    className='sectionSubtext'
+                    href='https://drive.google.com/file/d/12vauSrYTOjQdUF71KvZ11Us3kW6YrOrV/view?usp=sharing'
+                    target="_blank"
+                    rel="noreferrer">
+                    Verification ↗
+                </a>
+                <div className='sectionSubtext'><strong>July 2022</strong></div>
+                <ul className='workSummary'>
+                    <li style={{ listStyleType: 'none' }}>Provides an <span>overall understanding of 
+                        Postman</span> including request types, API tests, variables, authentication, 
+                        mock servers, and more.
+                    </li>
+                </ul>
+
+                <div className='sectionText'>Agile with Atlassian Jira</div>
+                <a
+                    className='sectionSubtext'
+                    href='https://www.coursera.org/account/accomplishments/verify/N9G7U32BW8ZU'
+                    target="_blank"
+                    rel="noreferrer">
+                    Verification ↗
+                </a>
+                <div className='sectionSubtext'><strong>April 2021</strong></div>
+                <ul className='workSummary'>
+                    <li style={{ listStyleType: 'none' }}>Proves understanding of the <span>basics of agile 
+                    methodologies</span> (scrum and and kanban), how to apply agile practices in Jira, 
+                    and how to create and manage agile boards in Jira.
+                    </li>
+                </ul>
             </div>
 
             <div className='scroll-arrow'>⇣</div>
