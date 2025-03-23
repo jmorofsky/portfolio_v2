@@ -7,51 +7,59 @@ function Work(props) {
             <div className='overflow-container'>
                 <div className='sectionTitle' style={{ width: '255px' }}>Professional Experience</div>
 
-                <div className='sectionText'>Ideagen</div>
+                <div className='sectionText'>red violet</div>
                 <div className='sectionSubtext'>Quality Assurance Engineer</div>
-                <div className='sectionSubtext'><strong>September 2022 - March 2023</strong></div>
+                <div className='sectionSubtext'><strong>May 2024 - Present</strong></div>
                 <ul className='workSummary'>
-                    <li>Established a new test infrastructure by updating 2-3 outdated tests and writing
-                        2-3 new ones each week, <span>providing coverage</span> to all aspects of the
-                        product.
+                    <li>Rewrote existing <span>UI automation</span> test suite from the ground up, fixing 
+                    broken test cases and writing dozens of new ones, massively expanding test coverage and 
+                    reliability.
                     </li>
-                    <li>Implemented testing tasks into the preexisting workflow,
-                        ensuring <span>quality is a priority</span> moving forwards.
+                    <li>Developed <span>frontend API wrapper,</span> allowing for much quicker API calls 
+                    rather than slower UI automation for certain repetitive testing tasks.
+                    </li>
+                    <li>With plentiful previous experience, facilitated team's <span>transition from waterfall 
+                        to agile</span> practices.
+                    </li>
+                    <li>Worked alongside developers and product owners to <span>optimize the QA smoke testing 
+                        and regression process</span> to ensure maximum coverage with as little unnecessary 
+                        testing as possible.
+                    </li>
+                    <li><span>Created automation</span> for the entire smoke testing and regression 
+                    checklist, including UI, API, and system tests, saving hours of manual testing time each 
+                    release.</li>
+                    <li>Successfully <span>brought several large projects to production</span> by employing a 
+                    three-tiered testing approach and creating testing frameworks.
                     </li>
 
                     <li style={{ listStyleType: "none" }}><br />
-                        In this position, I helped test the <span>frontend usability</span> of a Windows-based
-                        application. I ensured all components were performing their expected behavior, and
-                        that their design was adequate both to perform their intended function as well as fit
-                        in seamlessly with the rest of the application.
+                        In this position, I am the sole manual and automation QA engineer for the product 
+                        <span> idiBATCH,</span> a web interface which generates millions in revenue each year 
+                        while navigating the tricky world of PII.
                     </li>
                 </ul>
 
                 <div className='sectionText'>Airfind</div>
-                <div className='sectionSubtext'>Quality Assurance Engineer</div>
+                <div className='sectionSubtext'>Quality Assurance Analyst</div>
                 <div className='sectionSubtext'><strong>September 2021 - August 2022</strong></div>
                 <ul className='workSummary'>
-                    <li>Collaborated directly alongside 12-person development team,
-                        ensuring a <span>standard of quality</span> and polish in the product.
+                    <li>Collaborated with the development team to <span>triage stories</span> and <span>create
+                        comprehensive testing plans.</span>
                     </li>
-                    <li>Created a suite of automatic tests using Postman, which <span>provided
-                        instant feedback</span> and bug reporting after each deployment, leading to an average
-                        reduction in regression of 60% each sprint.
+                    <li>Created a suite of <span>API test cases</span> using Postman, which greatly increased
+                    testing coverage while reducing manual testing load. 
                     </li>
-                    <li>Engaged in weekly bug hunts to actively <span>seek out existing
-                        issues</span> and document them, decreasing user bug reports by
-                        35% per month on average.
+                    <li>Each sprint, executed <span>smoke</span> and <span>regression tests</span>, as well as 
+                    test cases created for <span>new user stories.</span>
                     </li>
 
                     <li style={{ listStyleType: "none" }}><br />
-                        For this position, I worked on Airfind's client dashboard. This was a <span>web portal
-                        </span> where clients using our advertising software could manage their ads, see
-                        revenue graphs, and contact us for support.
+                        For this position, I tested <span>ad placements</span> and the <span>Client 
+                        Dashboard,</span> a web portal where customers could manage their ad placements, see 
+                        revenue graphs, make payments, and more.
                     </li>
                     <li style={{ listStyleType: "none" }}>
-                        I <span>tested</span> new features being added to the web app, frontend usability,
-                        responsiveness, design, integrity of data on both the front and back ends, and
-                        multiple API endpoints to ensure functionality in all scenarios.
+                        I was one member in a team of six QA analysts, working alongside 10+ developers.
                     </li>
                 </ul>
 

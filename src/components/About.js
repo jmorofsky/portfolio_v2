@@ -16,7 +16,7 @@ class About extends React.Component {
                             Programming, Data Structures, and Algorithms
                         </li>
                         <li>
-                            Volunteered as <span>coach</span> for Varsity Rainbow Six: Siege Esports Team,
+                            Competed as a <span>player and coach</span> in varsity Rainbow Six: Siege esports,
                             culminating in top 8 playoff placing out of 64 teams
                         </li>
                     </ul>
@@ -27,29 +27,29 @@ class About extends React.Component {
 
                     <div className='sectionTitle' style={{ marginTop: '100px' }}>Skills</div>
                     <div className='skillOutline' style={{ marginTop: '35px' }}>
-                        <div className='skillBar' style={{ width: '90%' }} />
+                        <div className='skillBar' style={{ width: '99%' }} />
                     </div>
-                    <div className='skillSubtext'>Quality Assurance</div>
+                    <div className='skillSubtext'>UI Automation</div>
                     <div className='skillOutline'>
-                        <div className='skillBar' style={{ width: '90%' }} />
+                        <div className='skillBar' style={{ width: '95%' }} />
                     </div>
-                    <div className='skillSubtext'>Test Case Creation</div>
+                    <div className='skillSubtext'>Test Case Design</div>
+                    <div className='skillOutline'>
+                        <div className='skillBar' style={{ width: '87%' }} />
+                    </div>
+                    <div className='skillSubtext'>API Automation</div>
                     <div className='skillOutline'>
                         <div className='skillBar' style={{ width: '80%' }} />
                     </div>
-                    <div className='skillSubtext'>Agile Methodology</div>
-                    <div className='skillOutline'>
-                        <div className='skillBar' style={{ width: '80%' }} />
-                    </div>
-                    <div className='skillSubtext'>Requirements Analysis</div>
+                    <div className='skillSubtext'>Fullstack Development</div>
                     <div className='skillOutline'>
                         <div className='skillBar' style={{ width: '70%' }} />
                     </div>
-                    <div className='skillSubtext'>Automation</div>
+                    <div className='skillSubtext'>Performance Testing</div>
                     <div className='skillOutline'>
                         <div className='skillBar' style={{ width: '60%' }} />
                     </div>
-                    <div className='skillSubtext'>Frontend Development</div>
+                    <div className='skillSubtext'>Agility</div>
 
                     <div className='sectionTitle' style={{ marginTop: '100px' }}>Some GitHub Stats</div>
                     <div className='statsContainer'>
