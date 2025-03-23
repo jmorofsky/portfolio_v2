@@ -2,10 +2,28 @@ import React from 'react'
 import '../css/About.css'
 
 class About extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            scrollable: true
+        }
+
+        this.handleScroll = this.handleScroll.bind(this)
+    }
+
+    handleScroll = (e) => {
+        const bottom = e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight
+        if (bottom) {
+            this.setState({ scrollable: false })
+        } else {
+            this.setState({ scrollable: true })
+        }
+    }
+
     render() {
         return (
             <div className='sectionContainer' style={this.props.style} id='about'>
-                <div className='overflow-container'>
+                <div className='overflow-container' onScroll={this.handleScroll}>
                     <div className='sectionTitle'>Education History</div>
                     <div className='sectionText'>Florida Polytechnic University</div>
                     <div className='sectionSubtext' id='nowrap'>Bachelor of Science, Computer Science</div>
@@ -85,7 +103,7 @@ class About extends React.Component {
                     <div style={{ height: '10px', width: '100%' }} >&nbsp;</div>
                 </div>
 
-                <div className='scroll-arrow'>⇣</div>
+                {this.state.scrollable && <div className='scroll-arrow'>⇣</div>}
             </div>
         )
     }
