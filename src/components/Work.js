@@ -34,7 +34,7 @@ class Work extends React.Component {
                             broken test cases and writing dozens of new ones, massively expanding test coverage and
                             reliability.
                         </li>
-                        <li>Developed <span>frontend API wrapper,</span> allowing for much quicker API calls
+                        <li>Developed <span>front-end API wrapper,</span> allowing for much quicker API calls
                             rather than slower UI automation for certain repetitive testing tasks.
                         </li>
                         <li>With plentiful previous experience, facilitated team's <span>transition from waterfall
@@ -74,7 +74,7 @@ class Work extends React.Component {
 
                         <li style={{ listStyleType: "none" }}><br />
                             For this position, I tested <span>ad placements</span> and the <span>Client
-                                Dashboard,</span> a web portal where customers could manage their ad placements, see
+                                Dashboard,</span> a web portal where customers can manage their ad placements, see
                             revenue graphs, make payments, and more.
                         </li>
                         <li style={{ listStyleType: "none" }}>
