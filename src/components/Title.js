@@ -10,7 +10,7 @@ class Title extends React.Component {
                     <div className='g'>Jason Morofsky</div>
                     <div className='b'>Jason Morofsky</div>
                 </div>
-                <div className='subtitle'>Software Developer</div>
+                <div className='subtitle'>Software Engineer</div>
             </div>
         )
     }

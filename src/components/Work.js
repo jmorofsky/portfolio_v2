@@ -27,8 +27,26 @@ class Work extends React.Component {
                     <div className='sectionTitle' style={{ width: '255px' }}>Professional Experience</div>
 
                     <div className='sectionText'>red violet</div>
-                    <div className='sectionSubtext'>Quality Assurance Engineer</div>
-                    <div className='sectionSubtext'><strong>May 2024 - Present</strong></div>
+                    <div className='sectionSubtext'>Software Engineer</div>
+                    <div className='sectionSubtext'><strong>June 2025 - Present</strong></div>
+                    <ul className='workSummary'>
+                        <li>Built and maintained complex Apache <span>Airflow DAGs</span> for automated data pipeline orchestration</li>
+                        <li>Developed <span>React dashboard</span> for real-time workflow monitoring and configuration management</li>
+                        <li>Processed <span>millions of records</span> each day according to detailed configuration and
+                            <span> billed customers</span> appropriately
+                        </li>
+                        <li><span>Collaborated across teams</span> with QA, cloud operations, and other verticals to ensure maximum
+                            quality, uptime, and functionality
+                        </li>
+                        <li style={{ listStyleType: "none" }}><br />
+                            <span>Full-stack</span> engineer developing a secure, large-scale <span>data processing
+                                system</span> handling PII using Python and Airflow backend,
+                            React frontend, and MySQL and PostgreSQL databases. AWS used for infrastructure deployment and monitoring.
+                        </li>
+                    </ul>
+
+                    <div className='sectionSubtext'>Quality Assurance Analyst</div>
+                    <div className='sectionSubtext'><strong>May 2024 - June 2025</strong></div>
                     <ul className='workSummary'>
                         <li>Rewrote existing <span>UI automation</span> test suite from the ground up, fixing
                             broken test cases and writing dozens of new ones, massively expanding test coverage and
@@ -37,10 +55,7 @@ class Work extends React.Component {
                         <li>Developed <span>front-end API wrapper,</span> allowing for much quicker API calls
                             rather than slower UI automation for certain repetitive testing tasks.
                         </li>
-                        <li>With plentiful previous experience, facilitated team's <span>transition from waterfall
-                            to agile</span> practices.
-                        </li>
-                        <li>Worked alongside developers and product owners to <span>optimize the QA smoke testing
+                        <li>Worked alongside relevant stakeholders to <span>optimize the smoke testing
                             and regression process</span> to ensure maximum coverage with as little unnecessary
                             testing as possible.
                         </li>
@@ -52,9 +67,8 @@ class Work extends React.Component {
                         </li>
 
                         <li style={{ listStyleType: "none" }}><br />
-                            In this position, I am the sole manual and automation QA engineer for the product
-                            <span> idiBATCH,</span> a web interface which generates millions in revenue each year
-                            while navigating the tricky world of PII.
+                            In this position, I was the sole manual and automation QA engineer for the product
+                            <span> idiBATCH,</span> a data processing system which generates millions in revenue each year.
                         </li>
                     </ul>
 
@@ -65,20 +79,11 @@ class Work extends React.Component {
                         <li>Collaborated with the development team to <span>triage stories</span> and <span>create
                             comprehensive testing plans.</span>
                         </li>
-                        <li>Created a suite of <span>API test cases</span> using Postman, which greatly increased
+                        <li>Helped create a suite of <span>automated test cases</span> using Postman, greatly increasing
                             testing coverage while reducing manual testing load.
                         </li>
-                        <li>Each sprint, executed <span>smoke</span> and <span>regression tests</span>, as well as
+                        <li>Each sprint, executed <span>smoke</span> and <span>regression tests,</span> as well as
                             test cases created for <span>new user stories.</span>
-                        </li>
-
-                        <li style={{ listStyleType: "none" }}><br />
-                            For this position, I tested <span>ad placements</span> and the <span>Client
-                                Dashboard,</span> a web portal where customers can manage their ad placements, see
-                            revenue graphs, make payments, and more.
-                        </li>
-                        <li style={{ listStyleType: "none" }}>
-                            I was one member in a team of six QA analysts, working alongside 10+ developers.
                         </li>
                     </ul>
 

@@ -34,8 +34,7 @@ class About extends React.Component {
                             Programming, Data Structures, and Algorithms
                         </li>
                         <li>
-                            Competed as a <span>player and coach</span> in varsity Rainbow Six: Siege esports,
-                            culminating in top 8 playoff placing out of 64 teams
+                            Competed as a <span>player and coach</span> in varsity Rainbow Six: Siege esports
                         </li>
                     </ul>
 

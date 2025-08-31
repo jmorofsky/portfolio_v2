@@ -7,7 +7,7 @@ class JML extends React.Component {
         super(props)
         this.state = {
             input: '',
-            output1: 'JM-Linux 1.0 LTS',
+            output1: 'jmL-1.0.1 LTS',
             output2: 'Type <help> to get started',
             help: 'helpInactive',
             directories: [

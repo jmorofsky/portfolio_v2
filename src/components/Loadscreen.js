@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/Loadscreen.css'
 import loadGif from '../images/loading.gif'
 
-const quips = ["picking up boost ", "browsing stackoverflow ", "counting macronutrients "]
+const quips = ["picking up boost ", "browsing stackoverflow ", "asking AI "]
 
 class Loadscreen extends React.Component {
     constructor(props) {
